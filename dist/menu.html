@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Cookies Cakes Cake Shed Weekly Menu.">
+  <title>Cake Shed Weekly Menu | Cookies Cakes</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header"><div class="container nav-wrap">
+    <a class="brand" href="index.html" aria-label="Cookies Cakes home"><img class="brand-logo" src="Logo.png" alt="Cookies Cakes — Homemade with love"></a>
+    <button class="menu-toggle" aria-expanded="false" aria-controls="main-nav">Menu</button>
+    <nav id="main-nav" class="main-nav"><a href="index.html">Home</a><a class="active" href="menu.html">Cake Shed Weekly Menu</a><a href="custom.html">Custom Cakes</a><a href="portfolio.html">Portfolio</a><a href="contact.html">Contact Us</a><a class="shop-link" href="shop.html">Shop <span>Coming soon</span></a></nav>
+  </div></header>
+  <main>
+    <section class="page-hero"><div class="container"><p class="eyebrow">Cake Shed</p><h1>This week's menu</h1><p>Freshly made treats, updated each week. Please get in touch if you would like to pre-order any items.</p></div></section>
+    <section class="menu-filter-section"><div class="container"><p class="eyebrow">Dietary requirements</p><div class="dietary-filters" role="group" aria-label="Filter menu by dietary requirement"><button class="filter-button active" type="button" data-dietary-filter="all">Show all</button><button class="filter-button" type="button" data-dietary-filter="gluten-free">Gluten-free</button><button class="filter-button" type="button" data-dietary-filter="vegan">Vegan</button></div></div></section>
+    <section class="section-pad menu-items-section"><div class="container"><div class="menu-grid">
+      <div id="weekly-menu-items" aria-live="polite"></div>
+    </div><p class="no-menu-results" hidden aria-live="polite">There are no matching items on this week's menu.</p></div></section>
+    <section class="suggestion-section"><div class="container suggestion-box">
+      <div><p class="eyebrow">Cake Shed</p><h2>Have a sweet idea?</h2><p>Tell us what you would love to see in the Cake Shed. Suggestions are anonymous — no name, email or login is needed.</p></div>
+      <form class="form-card compact-form" action="https://formspree.io/f/YOUR_SUGGESTION_FORM_ID" method="POST">
+        <input type="hidden" name="_subject" value="New Cake Shed suggestion">
+        <label for="suggestion">Your suggestion</label><textarea id="suggestion" name="suggestion" rows="6" required placeholder="What cake, flavour or treat should we make next?"></textarea>
+        <button class="btn btn-primary" type="submit">Send suggestion</button><p class="form-note">Your message is sent privately to Cookies Cakes. We will not see your name or email.</p>
+      </form>
+    </div></section>
+  </main>
+  <footer class="site-footer"><div class="container footer-grid"><div><img class="footer-logo" src="Logo.png" alt="Cookies Cakes"><p>Homemade with love</p></div><div class="footer-links"><a href="menu.html">Cake Shed Weekly Menu</a><a href="custom.html">Custom Cakes</a><a href="portfolio.html">Portfolio</a><a href="contact.html">Contact Us</a><a href="shop.html">Shop</a></div><div class="socials"><a href="#">Instagram</a><a href="#">Facebook</a><a href="#">TikTok</a></div></div><div class="container copyright">© 2026 Cookies Cakes. All rights reserved.</div></footer>
+  <script src="menu-data.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
