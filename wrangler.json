@@ -1,8 +1,10 @@
 {
 	"name": "cookiescakeswebpage",
 	"compatibility_date": "2025-10-08",
+	"main": "./src/index.js",
 	"assets": {
-		"directory": "./dist"
+		"directory": "./dist",
+		"binding": "ASSETS"
 	},
 	"observability": {
 		"enabled": true
