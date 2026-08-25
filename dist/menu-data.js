@@ -1,8 +1,8 @@
 window.menuCatalogue = [
   {
     "id": "example-cake",
+    "title": "Example cake test 1",
     "category": "Cakes",
-    "title": "Example cake",
     "description": "A short description of this week's delicious offering can go here.",
     "price": "£4.00",
     "image": "",
@@ -11,8 +11,8 @@ window.menuCatalogue = [
   },
   {
     "id": "example-treat",
-    "category": "Treats",
-    "title": "Example treat",
+    "title": "Example cookie test 1",
+    "category": "Cookies",
     "description": "A short description of this week's delicious offering can go here.",
     "price": "£4.00",
     "image": "",
@@ -21,4 +21,13 @@ window.menuCatalogue = [
   }
 ];
 
-window.weeklyMenuSelection = ["example-cake", "example-treat"];
+window.weeklyMenuSelection = [
+  "example-cake",
+  "example-treat"
+];
+
+window.menuCategories = [
+  "Cakes",
+  "Treats",
+  "Cookies"
+];
