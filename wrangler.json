@@ -2,6 +2,9 @@
 	"name": "cookiescakeswebpage",
 	"compatibility_date": "2025-10-08",
 	"main": "./src/index.js",
+	"secrets": {
+		"required": ["GITHUB_TOKEN", "MENU_PUBLISH_PASSWORD"]
+	},
 	"assets": {
 		"directory": "./dist",
 		"binding": "ASSETS"
