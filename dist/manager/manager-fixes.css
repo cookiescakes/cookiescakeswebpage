@@ -1,0 +1,6 @@
+.manager-layout{grid-template-columns:minmax(320px,350px) minmax(0,1fr)}
+.library-item{align-items:flex-start}
+.library-item input{flex:0 0 auto;margin-top:3px}
+.library-item span{min-width:0;overflow-wrap:anywhere;white-space:normal}
+.category-title-row h4{min-width:0;overflow-wrap:anywhere}
+.remove-category{flex:0 0 auto}
