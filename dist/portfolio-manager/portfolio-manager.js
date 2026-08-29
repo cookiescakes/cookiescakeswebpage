@@ -47,7 +47,8 @@ function syncItems() {
 
 function previewFor(item, file) {
   if (file) return URL.createObjectURL(file);
-  return item.image || '';
+  if (!item.image) return '';
+  return new URL(item.image.replace(/^\/+/, ''), `${workerUrl}/`).href;
 }
 
 function renderItems() {
@@ -56,7 +57,11 @@ function renderItems() {
   portfolioItems.forEach(item => {
     const card = itemTemplate.content.cloneNode(true).querySelector('.item');
     card.dataset.id = item.id;
-    card.querySelector('[name="title"]').value = item.title;
+    const titleInput = card.querySelector('[name="title"]');
+    const cardTitle = card.querySelector('.item-head h3');
+    const updateCardTitle = () => { cardTitle.textContent = titleInput.value.trim() || 'Untitled photo'; };
+    titleInput.value = item.title;
+    updateCardTitle();
     card.querySelector('[name="caption"]').value = item.caption;
     card.querySelector('[name="instagram"]').value = item.instagram;
     card.querySelector('[name="visible"]').checked = item.visible;
@@ -67,6 +72,7 @@ function renderItems() {
     const previewUrl = previewFor(item, image?.file);
     if (previewUrl) preview.innerHTML = `<img src="${previewUrl}" alt="${item.title || 'Portfolio photo'}">`;
     card.querySelectorAll('input:not([type="file"]),textarea').forEach(input => input.addEventListener('input', () => updateItem(card)));
+    titleInput.addEventListener('input', updateCardTitle);
     card.querySelector('[name="visible"]').addEventListener('change', () => updateItem(card));
     card.querySelector('[name="image"]').addEventListener('change', async event => {
       const sourceFile = event.target.files[0];
