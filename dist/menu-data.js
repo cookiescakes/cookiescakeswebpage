@@ -24,7 +24,7 @@ window.menuCatalogue = [
     "title": "Biscoff Brownie",
     "category": "Brownies",
     "description": "A rich, fudgy chocolate brownie layered or swirled with sweet, caramel-flavoured Lotus Biscoff cookie butter and topped with crunchy biscuit pieces",
-    "price": "",
+    "price": "3.50",
     "image": "",
     "glutenFree": false,
     "vegan": false
@@ -179,7 +179,8 @@ window.weeklyMenuSelection = [
   "item-1787775204457-xccr08",
   "item-1787775023160-g7qfdy",
   "item-1787775974618-gw10oh",
-  "item-1787776006367-ci2qkk"
+  "item-1787776006367-ci2qkk",
+  "item-1787774976927-vfaj5u"
 ];
 
 window.menuCategories = [
