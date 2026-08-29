@@ -1,7 +1,7 @@
 window.portfolioItems = [
   {
     "id": "portfolio-1788040132971-uj9n1c",
-    "title": "Cookies Pie",
+    "title": "Cookie Pie",
     "caption": "",
     "instagram": "",
     "image": "portfolio-images/1788040171595-portfolio-1788040132971-uj9n1c-portfolio-photo.jpg",
