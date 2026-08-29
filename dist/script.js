@@ -12,5 +12,9 @@ document.querySelectorAll('.menu-toggle').forEach(btn=>{btn.addEventListener('cl
 const socialLinks={Instagram:'https://www.instagram.com/cookiescakes.uk/',Facebook:'https://www.facebook.com/profile.php?id=61591827583888'};
 document.querySelectorAll('.socials a,.social-buttons a').forEach(link=>{const name=link.textContent.trim().replace('→','').trim();if(socialLinks[name]){link.href=socialLinks[name];link.target='_blank';link.rel='noopener noreferrer';}if(name==='TikTok')link.remove();});
 
+document.querySelectorAll('.brand-logo').forEach(logo=>{logo.style.borderRadius='0';logo.style.boxShadow='none';});
+document.querySelectorAll('.footer-logo').forEach(logo=>{logo.style.filter='invert(1)';});
+document.querySelectorAll('.site-footer').forEach(footer=>{footer.style.background='#1f1d1e';});
+
 const dietaryFilterButtons=document.querySelectorAll('[data-dietary-filter]');
 if(dietaryFilterButtons.length){const menuCards=document.querySelectorAll('.menu-grid .product-card');const noMenuResults=document.querySelector('.no-menu-results');dietaryFilterButtons.forEach(button=>{button.addEventListener('click',()=>{const filter=button.dataset.dietaryFilter;let matches=0;dietaryFilterButtons.forEach(item=>item.classList.toggle('active',item===button));menuCards.forEach(card=>{const show=filter==='all'||Boolean(card.querySelector(`.${filter}:not([hidden])`));card.hidden=!show;if(show)matches+=1;});if(noMenuResults)noMenuResults.hidden=matches!==0;});});}
