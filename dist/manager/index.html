@@ -9,6 +9,7 @@
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="menu-manager.css">
   <link rel="stylesheet" href="manager-fixes.css">
+  <link rel="stylesheet" href="manager-accordion.css">
   <link rel="stylesheet" href="../image-cropper.css">
 </head>
 <body>
@@ -25,7 +26,7 @@
     </section>
     <section class="help-card"><h2>How it works</h2><p>Each item stays saved in your online menu library. The sidebar is grouped by category, so it is quick to choose regulars for the week. Removing an item deletes it permanently; turning it off only hides it from this week’s menu.</p><p class="small">Use any modern browser on a computer or phone. Refreshing the published menu discards unpublished changes on this page.</p></section>
   </main>
-  <template id="item-template"><article class="item-card"><div class="item-top"><h3>Menu item</h3><button class="remove-item" type="button">Remove permanently</button></div><div class="item-grid"><label>Title<input name="title" type="text" required placeholder="e.g. Lemon drizzle slice"></label><label>Price<input name="price" type="text" inputmode="decimal" required placeholder="e.g. £4.00"></label></div><label>Category<select name="category" required></select></label><label>Short description<textarea name="description" rows="3" required placeholder="A short, tempting description."></textarea></label><label>Photo<input name="image" type="file" accept="image/*"><span class="photo-name">No new photo selected</span></label><div class="dietary-options"><label><input name="glutenFree" type="checkbox"> Gluten-free</label><label><input name="vegan" type="checkbox"> Vegan</label></div></article></template>
+  <template id="item-template"><details class="item-card" draggable="true"><summary><span class="item-summary-main"><span class="drag-handle" aria-hidden="true">↕</span><span class="item-summary-title">Untitled item</span></span><span class="item-summary-action">Edit details</span></summary><div class="item-details"><div class="item-top"><button class="remove-item" type="button">Remove permanently</button></div><div class="item-grid"><label>Title<input name="title" type="text" required placeholder="e.g. Lemon drizzle slice"></label><label>Price<input name="price" type="text" inputmode="decimal" required placeholder="e.g. £4.00"></label></div><label>Category<select name="category" required></select></label><label>Short description<textarea name="description" rows="3" required placeholder="A short, tempting description."></textarea></label><label>Photo<input name="image" type="file" accept="image/*"><span class="photo-name">No new photo selected</span></label><div class="dietary-options"><label><input name="glutenFree" type="checkbox"> Gluten-free</label><label><input name="vegan" type="checkbox"> Vegan</label></div></div></details></template>
   <script src="manager-config.js"></script>
   <script src="../image-cropper.js"></script>
   <script src="menu-manager.js"></script>
