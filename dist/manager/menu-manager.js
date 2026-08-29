@@ -72,3 +72,5 @@ itemsMount.addEventListener('click',event=>{if(event.target.closest('.move-item'
 refreshButton.addEventListener('click',loadPublishedMenu);
 document.querySelector('#menu-form').addEventListener('submit',event=>{event.preventDefault();try{prepareMenuForPublish();}catch(error){setStatus(saveStatus,error.message||'Check your menu before publishing.',true);}});
 loadPublishedMenu();
+const tabIcon=document.querySelector('link[rel="icon"]');
+if(tabIcon){tabIcon.href='favicon.png';tabIcon.type='image/png';}

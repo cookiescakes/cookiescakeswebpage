@@ -15,6 +15,8 @@ document.querySelectorAll('.socials a,.social-buttons a').forEach(link=>{const n
 document.querySelectorAll('.brand-logo').forEach(logo=>{logo.style.borderRadius='0';logo.style.boxShadow='none';});
 document.querySelectorAll('.footer-logo').forEach(logo=>{logo.style.filter='invert(1)';});
 document.querySelectorAll('.site-footer').forEach(footer=>{footer.style.background='#1f1d1e';});
+const tabIcon=document.querySelector('link[rel="icon"]');
+if(tabIcon){tabIcon.href='favicon.png';tabIcon.type='image/png';}
 
 const dietaryFilterButtons=document.querySelectorAll('[data-dietary-filter]');
 if(dietaryFilterButtons.length){const menuCards=document.querySelectorAll('.menu-grid .product-card');const noMenuResults=document.querySelector('.no-menu-results');dietaryFilterButtons.forEach(button=>{button.addEventListener('click',()=>{const filter=button.dataset.dietaryFilter;let matches=0;dietaryFilterButtons.forEach(item=>item.classList.toggle('active',item===button));menuCards.forEach(card=>{const show=filter==='all'||Boolean(card.querySelector(`.${filter}:not([hidden])`));card.hidden=!show;if(show)matches+=1;});if(noMenuResults)noMenuResults.hidden=matches!==0;});});}

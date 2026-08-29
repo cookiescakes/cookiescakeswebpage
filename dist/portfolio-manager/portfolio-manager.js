@@ -216,3 +216,5 @@ document.querySelector('#password').addEventListener('keydown', event => {
   publish();
 });
 loadPortfolio();
+const tabIcon=document.querySelector('link[rel="icon"]');
+if(tabIcon){tabIcon.href='favicon.png';tabIcon.type='image/png';}
