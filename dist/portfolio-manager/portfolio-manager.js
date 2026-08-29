@@ -210,4 +210,9 @@ document.querySelector('#refresh').addEventListener('click', () => {
   loadPortfolio();
 });
 document.querySelector('#publish').addEventListener('click', publish);
+document.querySelector('#password').addEventListener('keydown', event => {
+  if (event.key !== 'Enter') return;
+  event.preventDefault();
+  publish();
+});
 loadPortfolio();
