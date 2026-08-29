@@ -119,9 +119,26 @@ async function menuDataResponse(request, env) {
   });
 }
 
+async function imageResponse(request, env, url) {
+  const imagePath = url.searchParams.get('path') || '';
+  if (!isSafeImagePath(imagePath, 'images') && !isSafeImagePath(imagePath, 'portfolio-images')) {
+    return response({ error: 'Image path is not valid.' }, 400);
+  }
+  const asset = await env.ASSETS.fetch(new Request(new URL(`/${imagePath}`, request.url)));
+  if (!asset.ok) return response({ error: 'The requested image is not available.' }, asset.status);
+  const headers = new Headers(asset.headers);
+  Object.entries(corsHeaders).forEach(([name, value]) => headers.set(name, value));
+  return new Response(asset.body, { status: asset.status, headers });
+}
+
 export default {
   async fetch(request, env) {
     const url = new URL(request.url);
+    if (url.pathname === '/api/image') {
+      if (request.method === 'OPTIONS') return new Response(null, { headers: corsHeaders });
+      if (request.method !== 'GET') return response({ error: 'Method not allowed' }, 405);
+      return imageResponse(request, env, url);
+    }
     if (url.pathname === '/api/menu-data') {
       if (request.method === 'OPTIONS') return new Response(null, { headers: corsHeaders });
       if (request.method !== 'GET') return response({ error: 'Method not allowed' }, 405);

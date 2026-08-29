@@ -51,6 +51,25 @@ function previewFor(item, file) {
   return new URL(item.image.replace(/^\/+/, ''), `${workerUrl}/`).href;
 }
 
+async function sourceFileFor(item) {
+  const pending = pendingImages.get(item.id);
+  if (pending) return pending.file;
+  if (!workerUrl || !item.image) throw new Error('There is no saved photo to re-crop.');
+  const response = await fetch(`${workerUrl}/api/image?path=${encodeURIComponent(item.image)}`);
+  if (!response.ok) throw new Error('The saved photo could not be loaded for re-cropping.');
+  const blob = await response.blob();
+  return new File([blob], item.image.split('/').pop() || 'portfolio-photo.jpg', { type: blob.type || 'image/jpeg' });
+}
+
+async function cropAndSetPhoto(item, card, sourceFile) {
+  const file = await window.CookiesCakesImageCropper.cropImage(sourceFile);
+  const path = imagePathFor(item, file);
+  item.image = path;
+  pendingImages.set(item.id, { file, path });
+  card.querySelector('.photo-name').textContent = `Cropped photo ready: ${file.name}`;
+  card.querySelector('.preview').innerHTML = `<img src="${previewFor(item, file)}" alt="${item.title || 'Portfolio photo'}">`;
+}
+
 function renderItems() {
   itemsMount.innerHTML = '';
   emptyState.hidden = portfolioItems.length !== 0;
@@ -71,6 +90,23 @@ function renderItems() {
     const preview = card.querySelector('.preview');
     const previewUrl = previewFor(item, image?.file);
     if (previewUrl) preview.innerHTML = `<img src="${previewUrl}" alt="${item.title || 'Portfolio photo'}">`;
+    const recropButton = document.createElement('button');
+    recropButton.className = 'recrop-photo';
+    recropButton.type = 'button';
+    recropButton.textContent = 'Re-crop current photo';
+    recropButton.disabled = !item.image;
+    photoName.closest('label').after(recropButton);
+    recropButton.addEventListener('click', async () => {
+      if (!item.image) return;
+      recropButton.disabled = true;
+      try {
+        await cropAndSetPhoto(item, card, await sourceFileFor(item));
+      } catch (error) {
+        if (error?.name !== 'ImageCropCancelled') setStatus(error.message || 'Could not re-crop that photo.', true);
+      } finally {
+        recropButton.disabled = !item.image;
+      }
+    });
     card.querySelectorAll('input:not([type="file"]),textarea').forEach(input => input.addEventListener('input', () => updateItem(card)));
     titleInput.addEventListener('input', updateCardTitle);
     card.querySelector('[name="visible"]').addEventListener('change', () => updateItem(card));
@@ -79,13 +115,9 @@ function renderItems() {
       event.target.value = '';
       if (!sourceFile) return;
       try {
-        const file = await window.CookiesCakesImageCropper.cropImage(sourceFile);
         updateItem(card);
-        const path = imagePathFor(item, file);
-        item.image = path;
-        pendingImages.set(item.id, { file, path });
-        photoName.textContent = `Cropped photo ready: ${file.name}`;
-        preview.innerHTML = `<img src="${previewFor(item, file)}" alt="${item.title || 'Portfolio photo'}">`;
+        await cropAndSetPhoto(item, card, sourceFile);
+        recropButton.disabled = false;
       } catch (error) {
         if (error?.name !== 'ImageCropCancelled') setStatus(error.message || 'Could not crop that photo.', true);
       }
