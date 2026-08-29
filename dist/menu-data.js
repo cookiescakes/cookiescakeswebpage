@@ -41,10 +41,10 @@ window.menuCatalogue = [
   },
   {
     "id": "item-1787775204457-xccr08",
-    "title": "Chocolate Chunk Muffin",
+    "title": "Triple Chocolate Chunk Muffin",
     "category": "Muffins",
     "description": "A soft, tender crumb bursting with rich, melted pools of large chocolate pieces.",
-    "price": "",
+    "price": "£2.50",
     "image": "",
     "glutenFree": false,
     "vegan": false
@@ -64,7 +64,7 @@ window.menuCatalogue = [
     "title": "Chocolate Chunk Cookie",
     "category": "Cookies",
     "description": "Crisp, golden-brown edges, a thick and wonderfully chewy centre, and rich pools of melted chocolate from hand-chopped white milk and dark chocolate bars.",
-    "price": "",
+    "price": "£3.00",
     "image": "",
     "glutenFree": false,
     "vegan": false
@@ -74,14 +74,14 @@ window.menuCatalogue = [
     "title": "Salted Caramel Cornflake Brownie",
     "category": "Brownies",
     "description": "a decadent treat featuring a rich, fudgy chocolate base topped with a sweet, crunchy layer of caramel-coated cornflakes",
-    "price": "",
+    "price": "£3.50",
     "image": "",
     "glutenFree": false,
     "vegan": false
   },
   {
     "id": "item-1787775763052-ewq29f",
-    "title": "Lemon & Blueberry Cheese Cake",
+    "title": "Lemon & Blueberry Cheesecake",
     "category": "Cheese Cakes",
     "description": "",
     "price": "",
@@ -91,7 +91,7 @@ window.menuCatalogue = [
   },
   {
     "id": "item-1787775807044-ndigb6",
-    "title": "Oreo/chocolate Cheese Cake",
+    "title": "Oreo/chocolate Cheesecake",
     "category": "Cheese Cakes",
     "description": "",
     "price": "",
@@ -104,7 +104,7 @@ window.menuCatalogue = [
     "title": "White Chocolate & Raspberry Cookie",
     "category": "Cookies",
     "description": "",
-    "price": "",
+    "price": "£3.00",
     "image": "",
     "glutenFree": false,
     "vegan": false
@@ -124,14 +124,14 @@ window.menuCatalogue = [
     "title": "Vegan Chocolate Muffin",
     "category": "Muffins",
     "description": "",
-    "price": "",
+    "price": "£3.00",
     "image": "",
     "glutenFree": false,
     "vegan": true
   },
   {
     "id": "item-1787776030136-bluvw9",
-    "title": "Vegan Biscoff Cheese Cake",
+    "title": "Vegan Biscoff Cheesecake",
     "category": "Cheese Cakes",
     "description": "",
     "price": "",
@@ -151,7 +151,7 @@ window.menuCatalogue = [
   },
   {
     "id": "item-1787776135068-ia31uc",
-    "title": "Gluten Free Millionaires Cheese Cake",
+    "title": "Gluten Free Millionaires Cheesecake",
     "category": "Cheese Cakes",
     "description": "",
     "price": "",
@@ -168,10 +168,66 @@ window.menuCatalogue = [
     "image": "",
     "glutenFree": true,
     "vegan": false
+  },
+  {
+    "id": "item-1788037882682-nqhcw4",
+    "title": "Gluten Free Lemon & Blueberry Cake",
+    "category": "Cakes",
+    "description": "",
+    "price": "£3.50",
+    "image": "",
+    "glutenFree": true,
+    "vegan": false
+  },
+  {
+    "id": "item-1788037938105-hx1pyq",
+    "title": "Gluten Free White Chocolate & Raspberry Cookie",
+    "category": "Cookies",
+    "description": "",
+    "price": "£3.00",
+    "image": "",
+    "glutenFree": true,
+    "vegan": false
+  },
+  {
+    "id": "item-1788037991791-h29gng",
+    "title": "Gluten Free Rocky Road Cookie",
+    "category": "Cookies",
+    "description": "",
+    "price": "£3.00",
+    "image": "",
+    "glutenFree": false,
+    "vegan": false
   }
 ];
 
 window.weeklyMenuSelection = [
+  "item-1788037991791-h29gng",
+  "item-1788037938105-hx1pyq",
+  "item-1788037882682-nqhcw4",
+  "example-cake",
+  "item-1787775366438-ugwrul",
+  "item-1787776062919-efkagu",
+  "item-1787775837058-tigdcd",
+  "item-1787774976927-vfaj5u",
+  "example-treat",
+  "item-1787775552342-tphnm8",
+  "item-1787775204457-xccr08",
+  "item-1787776246198-2m9pqh",
+  "item-1787775304460-ukfq40",
+  "item-1787775023160-g7qfdy",
+  "item-1787776006367-ci2qkk",
+  "item-1787775974618-gw10oh",
+  "item-1787776135068-ia31uc",
+  "item-1787775763052-ewq29f",
+  "item-1787775807044-ndigb6",
+  "item-1787776030136-bluvw9"
+];
+
+window.menuItemOrder = [
+  "item-1788037991791-h29gng",
+  "item-1788037938105-hx1pyq",
+  "item-1788037882682-nqhcw4",
   "example-cake",
   "item-1787775366438-ugwrul",
   "item-1787776062919-efkagu",
