@@ -68,15 +68,21 @@ function renderItems() {
     if (previewUrl) preview.innerHTML = `<img src="${previewUrl}" alt="${item.title || 'Portfolio photo'}">`;
     card.querySelectorAll('input:not([type="file"]),textarea').forEach(input => input.addEventListener('input', () => updateItem(card)));
     card.querySelector('[name="visible"]').addEventListener('change', () => updateItem(card));
-    card.querySelector('[name="image"]').addEventListener('change', event => {
-      const file = event.target.files[0];
-      if (!file) return;
-      updateItem(card);
-      const path = imagePathFor(item, file);
-      item.image = path;
-      pendingImages.set(item.id, { file, path });
-      photoName.textContent = `New photo: ${file.name}`;
-      preview.innerHTML = `<img src="${previewFor(item, file)}" alt="${item.title || 'Portfolio photo'}">`;
+    card.querySelector('[name="image"]').addEventListener('change', async event => {
+      const sourceFile = event.target.files[0];
+      event.target.value = '';
+      if (!sourceFile) return;
+      try {
+        const file = await window.CookiesCakesImageCropper.cropImage(sourceFile);
+        updateItem(card);
+        const path = imagePathFor(item, file);
+        item.image = path;
+        pendingImages.set(item.id, { file, path });
+        photoName.textContent = `Cropped photo ready: ${file.name}`;
+        preview.innerHTML = `<img src="${previewFor(item, file)}" alt="${item.title || 'Portfolio photo'}">`;
+      } catch (error) {
+        if (error?.name !== 'ImageCropCancelled') setStatus(error.message || 'Could not crop that photo.', true);
+      }
     });
     card.querySelector('.remove').addEventListener('click', () => {
       if (!window.confirm(`Remove “${item.title || 'this portfolio photo'}” permanently?`)) return;
