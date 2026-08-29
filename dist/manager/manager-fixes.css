@@ -4,3 +4,29 @@
 .library-item span{min-width:0;overflow-wrap:anywhere;white-space:normal}
 .category-title-row h4{min-width:0;overflow-wrap:anywhere}
 .remove-category{flex:0 0 auto}
+
+@media(max-width:700px){
+  .manager-shell{width:100%;padding:18px 12px 46px}
+  .manager-header{grid-template-columns:1fr;gap:16px;text-align:center;margin-bottom:22px}
+  .manager-header img{width:132px;margin:auto}
+  h1{font-size:36px}
+  h2{font-size:27px}
+  .start-card,.help-card,.library-sidebar,.edit-area{padding:18px;border-radius:18px}
+  .start-card,.editor-heading,.active-heading,.save-bar,.publish-action{align-items:stretch;flex-direction:column}
+  .editor-heading,.active-heading{gap:12px}
+  .start-card .button,.editor-heading .button,.publish-action .button{width:100%;min-height:48px}
+  .manager-layout{grid-template-columns:minmax(0,1fr);gap:14px}
+  .library-sidebar{position:static}
+  .library-list{grid-template-columns:1fr;gap:14px;padding-top:14px}
+  .library-item{min-height:44px;padding:10px 3px;font-size:15px}
+  .library-item input{width:20px;height:20px;margin-top:1px}
+  .item-card{padding:17px;border-radius:16px}
+  .item-top{align-items:flex-start;flex-direction:column;gap:8px;margin-bottom:14px}
+  .remove-item{padding:8px 0;font-size:14px}
+  .item-grid{grid-template-columns:1fr;gap:0}
+  .item-card input[type=text],.item-card select,.item-card textarea,.publish-card input{font-size:16px}
+  .dietary-options{gap:12px}
+  .dietary-options label{padding:8px 0}
+  .publish-card{margin-top:24px;padding:18px;border-radius:16px}
+  .publish-action .status{min-height:20px}
+}
