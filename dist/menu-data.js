@@ -198,30 +198,98 @@ window.menuCatalogue = [
     "image": "",
     "glutenFree": false,
     "vegan": false
+  },
+  {
+    "id": "item-1788290240045-by0u59",
+    "title": "Coffee and walnut cake",
+    "category": "Cakes",
+    "description": "A yummy slice of coffee and walnut cake with a coffee buttercream filling.",
+    "price": "",
+    "image": "",
+    "glutenFree": true,
+    "vegan": true
+  },
+  {
+    "id": "item-1788290304767-bmxqp0",
+    "title": "Peanut butter and chocolate flapjacks",
+    "category": "slices",
+    "description": "A peanut butter flapjack, drizzled with chocolate and peanut pieces. ",
+    "price": "",
+    "image": "",
+    "glutenFree": false,
+    "vegan": true
+  },
+  {
+    "id": "item-1788290488360-4faju7",
+    "title": "Biscoff cookie pie",
+    "category": "slices",
+    "description": "A biscoff filled cookie pie. ",
+    "price": "",
+    "image": "",
+    "glutenFree": false,
+    "vegan": false
+  },
+  {
+    "id": "item-1788290529957-1zafg4",
+    "title": "Salted caramel cookies",
+    "category": "Cookies",
+    "description": "A chocolate chip cookie stuffed with salted caramel filling. ",
+    "price": "",
+    "image": "",
+    "glutenFree": true,
+    "vegan": false
+  },
+  {
+    "id": "item-1788290577136-x52eya",
+    "title": "Kinder stuffer cookie",
+    "category": "Cookies",
+    "description": "A chocolate chip cookie stuffed with kinder pieces and spread. ",
+    "price": "",
+    "image": "",
+    "glutenFree": true,
+    "vegan": false
+  },
+  {
+    "id": "item-1788290632398-l9y68i",
+    "title": "School cake",
+    "category": "Cakes",
+    "description": "A slice of school cake covered in icing and sprinkles. ",
+    "price": "",
+    "image": "",
+    "glutenFree": false,
+    "vegan": false
+  },
+  {
+    "id": "item-1788290668741-utmk7q",
+    "title": "Raspberry and white chocolate muffin",
+    "category": "Muffins",
+    "description": "Raspberry and white chocolate muffins with a white chocolate buttercream topping. ",
+    "price": "",
+    "image": "",
+    "glutenFree": false,
+    "vegan": false
+  },
+  {
+    "id": "item-1788290727409-wqcvws",
+    "title": "Tiramisu",
+    "category": "fridge faves",
+    "description": "A no bake Italian dessert made with layers of coffee soaked lady fingers and a rich mascapone cream. ",
+    "price": "",
+    "image": "",
+    "glutenFree": false,
+    "vegan": false
   }
 ];
 
 window.weeklyMenuSelection = [
-  "item-1788037991791-h29gng",
-  "item-1788037938105-hx1pyq",
-  "item-1788037882682-nqhcw4",
-  "example-cake",
-  "item-1787775366438-ugwrul",
-  "item-1787776062919-efkagu",
-  "item-1787775837058-tigdcd",
-  "item-1787774976927-vfaj5u",
-  "example-treat",
-  "item-1787775552342-tphnm8",
-  "item-1787775204457-xccr08",
-  "item-1787776246198-2m9pqh",
-  "item-1787775304460-ukfq40",
-  "item-1787775023160-g7qfdy",
-  "item-1787776006367-ci2qkk",
-  "item-1787775974618-gw10oh",
-  "item-1787776135068-ia31uc",
-  "item-1787775763052-ewq29f",
-  "item-1787775807044-ndigb6",
-  "item-1787776030136-bluvw9"
+  "item-1788290240045-by0u59",
+  "item-1788290304767-bmxqp0",
+  "item-1788290488360-4faju7",
+  "item-1788290529957-1zafg4",
+  "item-1788290577136-x52eya",
+  "item-1788290632398-l9y68i",
+  "item-1788290668741-utmk7q",
+  "item-1788290727409-wqcvws"
 ];
 
 window.menuItemOrder = [
@@ -242,15 +310,25 @@ window.menuItemOrder = [
   "item-1787776006367-ci2qkk",
   "item-1787775974618-gw10oh",
   "item-1787776135068-ia31uc",
+  "item-1787776030136-bluvw9",
   "item-1787775763052-ewq29f",
   "item-1787775807044-ndigb6",
-  "item-1787776030136-bluvw9"
+  "item-1788290240045-by0u59",
+  "item-1788290304767-bmxqp0",
+  "item-1788290488360-4faju7",
+  "item-1788290529957-1zafg4",
+  "item-1788290577136-x52eya",
+  "item-1788290632398-l9y68i",
+  "item-1788290668741-utmk7q",
+  "item-1788290727409-wqcvws"
 ];
 
 window.menuCategories = [
-  "Cakes",
-  "Cookies",
   "Brownies",
+  "Cakes",
+  "Cheese Cakes",
+  "Cookies",
+  "fridge faves",
   "Muffins",
-  "Cheese Cakes"
+  "slices"
 ];
