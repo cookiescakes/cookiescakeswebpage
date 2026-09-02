@@ -5,7 +5,7 @@ window.menuCatalogue = [
     "category": "Cakes",
     "description": "A moist, tender sponge cake flavoured with fresh lemon zest and juice, and studded with juicy fresh blueberries.",
     "price": "",
-    "image": "",
+    "image": "images/1788380494878-example-cake-lemon-blueberry-cake-with-lemon-curd.jpg",
     "glutenFree": false,
     "vegan": false
   },
@@ -25,7 +25,7 @@ window.menuCatalogue = [
     "category": "Brownies",
     "description": "A rich, fudgy chocolate brownie layered or swirled with sweet, caramel-flavoured Lotus Biscoff cookie butter and topped with crunchy biscuit pieces",
     "price": "£3.50",
-    "image": "",
+    "image": "images/1788380426204-item-1787774976927-vfaj5u-biscoff-brownie.jpg",
     "glutenFree": false,
     "vegan": false
   },
@@ -35,7 +35,7 @@ window.menuCatalogue = [
     "category": "Muffins",
     "description": " A sweet, decadent baked treat featuring a moist, fluffy sponge infused with brown sugar or vanilla and a gooey salted caramel core.",
     "price": "",
-    "image": "",
+    "image": "images/1788380677225-item-1787775023160-g7qfdy-salted-caramel-muffin.jpg",
     "glutenFree": false,
     "vegan": false
   },
@@ -45,7 +45,7 @@ window.menuCatalogue = [
     "category": "Muffins",
     "description": "A soft, tender crumb bursting with rich, melted pools of large chocolate pieces.",
     "price": "£2.50",
-    "image": "",
+    "image": "images/1788380699842-item-1787775204457-xccr08-triple-chocolate-chunk-muffin.jpg",
     "glutenFree": false,
     "vegan": false
   },
@@ -81,12 +81,12 @@ window.menuCatalogue = [
   },
   {
     "id": "item-1787775763052-ewq29f",
-    "title": "Lemon & Blueberry Cheesecake",
+    "title": "Gluten free Lemon & Blueberry Cheesecake",
     "category": "Cheese Cakes",
     "description": "",
     "price": "",
-    "image": "",
-    "glutenFree": false,
+    "image": "images/1788380795374-item-1787775763052-ewq29f-lemon-blueberry-cheesecake.jpg",
+    "glutenFree": true,
     "vegan": false
   },
   {
@@ -95,7 +95,7 @@ window.menuCatalogue = [
     "category": "Cheese Cakes",
     "description": "",
     "price": "",
-    "image": "",
+    "image": "images/1788380575728-item-1787775807044-ndigb6-oreo-chocolate-cheesecake.jpg",
     "glutenFree": false,
     "vegan": false
   },
@@ -105,7 +105,7 @@ window.menuCatalogue = [
     "category": "Cookies",
     "description": "",
     "price": "£3.00",
-    "image": "",
+    "image": "images/1788380647444-item-1787775837058-tigdcd-white-chocolate-raspberry-cookie.jpg",
     "glutenFree": false,
     "vegan": false
   },
@@ -135,7 +135,7 @@ window.menuCatalogue = [
     "category": "Cheese Cakes",
     "description": "",
     "price": "",
-    "image": "",
+    "image": "images/1788380617151-item-1787776030136-bluvw9-vegan-biscoff-cheesecake.jpg",
     "glutenFree": false,
     "vegan": true
   },
@@ -155,7 +155,7 @@ window.menuCatalogue = [
     "category": "Cheese Cakes",
     "description": "",
     "price": "",
-    "image": "",
+    "image": "images/1788380544744-item-1787776135068-ia31uc-gluten-free-millionaires-cheesecake.jpg",
     "glutenFree": true,
     "vegan": false
   },
