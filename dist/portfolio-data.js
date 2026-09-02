@@ -1,7 +1,7 @@
 window.portfolioItems = [
   {
     "id": "homepage-feature-cake-video",
-    "title": "Opening week cake shed",
+    "title": "Cake in the making",
     "portfolioType": "cake",
     "displayAsFeature": false,
     "displayAsHomepageFeature": false,
