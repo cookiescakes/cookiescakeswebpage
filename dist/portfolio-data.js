@@ -4,7 +4,7 @@ window.portfolioItems = [
     "title": "Cake in the making",
     "portfolioType": "cake",
     "displayAsFeature": false,
-    "displayAsHomepageFeature": false,
+    "displayAsHomepageFeature": true,
     "caption": "",
     "instagram": "",
     "image": "portfolio-images/homepage-feature-cake.gif",
