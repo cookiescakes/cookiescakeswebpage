@@ -275,3 +275,9 @@ document.querySelector('#password').addEventListener('keydown', event => {
 loadPortfolio();
 const tabIcon=document.querySelector('link[rel="icon"]');
 if(tabIcon){tabIcon.href='favicon.png';tabIcon.type='image/png';}
+const portfolioThemeToggle=document.createElement('button');
+portfolioThemeToggle.type='button';portfolioThemeToggle.className='theme-toggle';
+document.querySelector('.header')?.append(portfolioThemeToggle);
+function applyPortfolioTheme(dark){document.body.classList.toggle('dark',dark);portfolioThemeToggle.textContent=dark?'Light mode':'Dark mode';portfolioThemeToggle.setAttribute('aria-pressed',String(dark));localStorage.setItem('cookies-cakes-manager-theme',dark?'dark':'light');}
+portfolioThemeToggle.addEventListener('click',()=>applyPortfolioTheme(!document.body.classList.contains('dark')));
+applyPortfolioTheme(localStorage.getItem('cookies-cakes-manager-theme')==='dark'||(!localStorage.getItem('cookies-cakes-manager-theme')&&matchMedia('(prefers-color-scheme: dark)').matches));

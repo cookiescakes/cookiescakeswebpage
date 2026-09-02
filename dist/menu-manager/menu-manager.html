@@ -3,7 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Weekly Menu Manager | Cookies Cakes</title>
+  <title>Cake Shed Menu Manager | Cookies Cakes</title>
+  <link rel="icon" type="image/png" href="../favicon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
@@ -11,19 +12,52 @@
 </head>
 <body>
   <main class="manager-shell">
-    <header class="manager-header"><img src="../Logo.png" alt="Cookies Cakes"><div><p class="eyebrow">Weekly Menu Manager</p><h1>Choose this week's treats.</h1><p>Use the sidebar to switch saved items on or off. Active items appear here for editing.</p></div></header>
-    <section class="start-card"><div><h2>1. Choose your website folder</h2><p>Select the <strong>cookiescakes_site</strong> folder. Your updates will be saved straight into the website.</p></div><button id="choose-folder" class="button" type="button">Choose website folder</button></section>
+    <header class="manager-header">
+      <img src="../Logo.png" alt="Cookies Cakes">
+      <div><p class="eyebrow">Cake Shed</p><h1>Menu Manager</h1><p>Keep one shared item library, then choose exactly what is live this week.</p></div>
+      <button id="theme-toggle" class="theme-toggle" type="button" aria-pressed="false">Dark mode</button>
+    </header>
+
+    <section class="start-card"><div><h2>Choose your website folder</h2><p>Select <strong>cookiescakes_site</strong> to save images and menu changes locally before publishing.</p></div><button id="choose-folder" class="button" type="button">Choose website folder</button></section>
     <p id="folder-status" class="status" aria-live="polite">No folder selected yet.</p>
+
     <section id="editor" class="editor" hidden>
-      <div class="editor-heading"><div><p class="eyebrow">Your menu library</p><h2>Plan this week's menu</h2></div><button id="add-item" class="button secondary" type="button">+ Add new item</button></div>
-      <div class="manager-layout">
-        <aside class="library-sidebar"><div class="sidebar-heading"><h3>All saved items</h3><p>Tick an item to show it this week.</p></div><div id="library-list" class="library-list"></div></aside>
-        <form id="menu-form" class="edit-area"><div class="active-heading"><div><p class="eyebrow">This week's menu</p><h3>Active items</h3></div><p id="active-count" class="active-count"></p></div><div id="items" class="items"></div><div id="empty-state" class="empty-state">Choose items from the sidebar to add them to this week's menu.</div><div class="save-bar"><p id="save-status" class="status" aria-live="polite"></p><button class="button" type="submit">Save menu locally</button></div><section class="publish-card"><p class="eyebrow">Publish</p><h3>Save and publish to GitHub</h3><p>Use this only on the test Worker. Your publish password is never saved in the browser.</p><label>Worker address<input id="publish-endpoint" type="url" autocomplete="url" placeholder="https://your-worker.workers.dev"></label><label>Publish password<input id="publish-password" type="password" autocomplete="off" placeholder="Enter your publish password"></label><div class="publish-action"><p id="publish-status" class="status" aria-live="polite"></p><button id="publish-github" class="button" type="button">Save &amp; publish to GitHub</button></div></section></form>
+      <div class="tabs" role="tablist" aria-label="Menu manager sections">
+        <button id="weekly-tab" class="tab active" type="button" role="tab" aria-controls="weekly-panel" aria-selected="true">This week’s menu</button>
+        <button id="library-tab" class="tab" type="button" role="tab" aria-controls="library-panel" aria-selected="false">Item library</button>
       </div>
+
+      <form id="menu-form">
+        <section id="weekly-panel" role="tabpanel" aria-labelledby="weekly-tab">
+          <div class="editor-heading"><div><p class="eyebrow">Live menu</p><h2>Plan this week’s menu</h2><p class="muted">Only items you add here are live. Their details stay synced with your saved library.</p></div><p id="weekly-count" class="count"></p></div>
+          <div class="weekly-layout">
+            <aside class="add-sidebar"><div class="sidebar-heading"><h3>Add from library</h3><p>Choose a saved item to show this week.</p></div><div id="weekly-library" class="weekly-library"></div></aside>
+            <section class="weekly-area"><div id="weekly-items" class="weekly-items"></div><div id="weekly-empty" class="empty-state">Add an item from the library to show it on this week’s menu.</div></section>
+          </div>
+        </section>
+
+        <section id="library-panel" role="tabpanel" aria-labelledby="library-tab" hidden>
+          <div class="editor-heading"><div><p class="eyebrow">Saved items</p><h2>Your item library</h2><p class="muted">Edit reusable items here. Changes stay synced, but an item never goes live unless you add it to this week.</p></div><div class="button-row"><button id="add-category" class="button secondary" type="button">+ Add category</button><button id="add-library-item" class="button secondary" type="button">+ Add item</button></div></div>
+          <div id="library-categories" class="library-categories"></div>
+        </section>
+
+        <div class="save-bar"><p id="save-status" class="status" aria-live="polite"></p><button class="button" type="submit">Save manager changes</button></div>
+      </form>
+
+      <section class="publish-card"><p class="eyebrow">Publish</p><h2>Publish this week’s menu</h2><p>Your library stays available for later; only the items marked for this week appear on the public menu.</p><label>Worker address<input id="publish-endpoint" type="url" autocomplete="url" placeholder="https://your-worker.workers.dev"></label><label>Publish password<input id="publish-password" type="password" autocomplete="off" placeholder="Enter your publish password"></label><div class="publish-action"><p id="publish-status" class="status" aria-live="polite"></p><button id="publish-github" class="button" type="button">Save &amp; publish to GitHub</button></div></section>
     </section>
-    <section class="help-card"><h2>How it works</h2><p>Each item stays saved in your menu library. The sidebar is grouped by the category you give each item, so it is quick to choose regulars for the week. Removing an item deletes it permanently; turning it off only hides it from this week’s menu.</p><p class="small">Use Chrome or Microsoft Edge for the folder-selection button.</p></section>
+
+    <section class="help-card"><h2>How it works</h2><p><strong>Item library:</strong> add, photograph, categorise and update reusable items. <strong>This week’s menu:</strong> choose and order only the items to show live. Item details are shared, but adding or editing an item never makes it live by itself.</p></section>
   </main>
-  <template id="item-template"><article class="item-card"><div class="item-top"><h3>Menu item</h3><button class="remove-item" type="button">Remove permanently</button></div><div class="item-grid"><label>Title<input name="title" type="text" required placeholder="e.g. Lemon drizzle slice"></label><label>Price<input name="price" type="text" required placeholder="e.g. £4.00"></label></div><label>Category<input name="category" type="text" required placeholder="e.g. Cookies, Brownies or Cakes"></label><label>Short description<textarea name="description" rows="3" required placeholder="A short, tempting description."></textarea></label><label>Photo<input name="image" type="file" accept="image/*"><span class="photo-name">No new photo selected</span></label><div class="dietary-options"><label><input name="glutenFree" type="checkbox"> Gluten-free</label><label><input name="vegan" type="checkbox"> Vegan</label></div></article></template>
+
+  <template id="weekly-template">
+    <article class="weekly-card"><div class="weekly-card-top"><span class="grab" aria-hidden="true">⠿</span><h3></h3><div class="move-buttons"><button class="move-up" type="button" aria-label="Move item up">↑</button><button class="move-down" type="button" aria-label="Move item down">↓</button><button class="remove-weekly" type="button">Remove from this week</button></div></div><details><summary>Edit saved item</summary><div class="item-fields"><div class="field-grid"><label>Title<input name="title" type="text" required></label><label>Price<input name="price" type="text" placeholder="£3.50" required></label></div><label>Category<select name="category"></select></label><label>Short description<textarea name="description" rows="3" required></textarea></label><label>Photo<input name="image" type="file" accept="image/*"><span class="photo-name"></span></label><div class="dietary-options"><label><input name="glutenFree" type="checkbox"> Gluten-free</label><label><input name="vegan" type="checkbox"> Vegan</label></div></div></details></article>
+  </template>
+
+  <template id="library-template">
+    <article class="library-card"><div class="library-card-top"><h3></h3><button class="remove-library" type="button">Remove permanently</button></div><details><summary>Edit saved item</summary><div class="item-fields"><div class="field-grid"><label>Title<input name="title" type="text" required></label><label>Price<input name="price" type="text" placeholder="£3.50" required></label></div><label>Category<select name="category"></select></label><label>Short description<textarea name="description" rows="3" required></textarea></label><label>Photo<input name="image" type="file" accept="image/*"><span class="photo-name"></span></label><div class="dietary-options"><label><input name="glutenFree" type="checkbox"> Gluten-free</label><label><input name="vegan" type="checkbox"> Vegan</label></div></div></details></article>
+  </template>
+
   <script src="menu-manager.js"></script>
   <script src="github-publish.js"></script>
 </body>

@@ -5,9 +5,33 @@ const publishStatus=document.querySelector('#publish-status');
 let publishAfterSave=false;
 if(location.protocol.startsWith('http'))publishEndpoint.value=location.origin;
 function publishMessage(message,isError=false){publishStatus.textContent=message;publishStatus.style.color=isError?'#9a254d':'';}
-function serialiseMenu(){return `window.menuCatalogue = ${JSON.stringify(menuCatalogue,null,2)};\n\nwindow.weeklyMenuSelection = ${JSON.stringify([...weeklySelection],null,2)};\n`;}
 function toBase64(file){return new Promise((resolve,reject)=>{const reader=new FileReader();reader.onload=()=>resolve(String(reader.result).split(',')[1]);reader.onerror=()=>reject(reader.error);reader.readAsDataURL(file);});}
-async function imagesForPublish(){if(!selectedDirectoryHandle)throw new Error('Choose the website folder first.');const imagesDirectory=await selectedDirectoryHandle.getDirectoryHandle('images');const paths=[...new Set(menuCatalogue.map(item=>item.image).filter(Boolean))];const images=[];for(const path of paths){if(!/^images\/[a-z0-9][a-z0-9._-]*$/i.test(path))throw new Error('An image path is not valid.');const file=await (await imagesDirectory.getFileHandle(path.slice(7))).getFile();images.push({path,content:await toBase64(file)});}return images;}
-async function publishToGitHub(){try{publishMessage('Uploading the menu to GitHub…');const endpoint=publishEndpoint.value.trim().replace(/\/$/,'');const result=await fetch(`${endpoint}/api/publish-menu`,{method:'POST',headers:{'Content-Type':'application/json','X-Menu-Publish-Password':publishPassword.value},body:JSON.stringify({menuData:serialiseMenu(),images:await imagesForPublish()})});const body=await result.json();if(!result.ok)throw new Error(body.error||'Publishing failed.');publishPassword.value='';publishMessage(`Published to GitHub — commit ${body.commit.slice(0,7)}.`);}catch(error){publishMessage(error.message||'Publishing failed.',true);}}
-publishButton.addEventListener('click',()=>{if(!publishEndpoint.value.trim()){publishMessage('Enter your Worker address first.',true);return;}if(!publishPassword.value){publishMessage('Enter the publish password first.',true);return;}publishAfterSave=true;document.querySelector('#menu-form').requestSubmit();});
-new MutationObserver(()=>{if(publishAfterSave&&saveStatus.textContent.startsWith('Saved!')){publishAfterSave=false;publishToGitHub();}else if(publishAfterSave&&saveStatus.style.color){publishAfterSave=false;}}).observe(saveStatus,{childList:true,characterData:true,subtree:true});
+async function imagesForPublish(){
+  if(!selectedDirectoryHandle)throw new Error('Choose the website folder first.');
+  const imagesDirectory=await selectedDirectoryHandle.getDirectoryHandle('images');
+  const images=[];
+  for(const path of getAllMenuImagePaths()){
+    if(!/^images\/[a-z0-9][a-z0-9._-]*$/i.test(path))throw new Error('An image path is not valid.');
+    const file=await (await imagesDirectory.getFileHandle(path.slice(7))).getFile();
+    images.push({path,content:await toBase64(file)});
+  }
+  return images;
+}
+async function publishToGitHub(){
+  try{
+    publishMessage('Uploading the menu to GitHub…');
+    const endpoint=publishEndpoint.value.trim().replace(/\/$/,'');
+    const result=await fetch(`${endpoint}/api/publish-menu`,{method:'POST',headers:{'Content-Type':'application/json','X-Menu-Publish-Password':publishPassword.value},body:JSON.stringify({menuData:serialiseMenuData(),images:await imagesForPublish()})});
+    const body=await result.json();
+    if(!result.ok)throw new Error(body.error||'Publishing failed.');
+    publishPassword.value='';publishMessage(`Published to GitHub — commit ${body.commit.slice(0,7)}.`);
+  }catch(error){publishMessage(error.message||'Publishing failed.',true);}
+}
+publishButton.addEventListener('click',async()=>{
+  if(!publishEndpoint.value.trim()){publishMessage('Enter your Worker address first.',true);return;}
+  if(!publishPassword.value){publishMessage('Enter the publish password first.',true);return;}
+  publishAfterSave=true;
+  const saved=await saveChanges();
+  if(saved){publishAfterSave=false;await publishToGitHub();}
+});
+publishPassword.addEventListener('keydown',event=>{if(event.key==='Enter'){event.preventDefault();publishButton.click();}});
