@@ -18,6 +18,10 @@ if(customCakeFeature){fetch(`portfolio-data.js?updated=${Date.now()}`).then(resp
 document.querySelectorAll('.brand-logo').forEach(logo=>{logo.style.borderRadius='0';logo.style.boxShadow='none';});
 document.querySelectorAll('.footer-logo').forEach(logo=>{logo.style.filter='invert(1)';});
 document.querySelectorAll('.site-footer').forEach(footer=>{footer.style.background='#1f1d1e';});
+
+const homeFeature=document.querySelector('.hero-art .photo-placeholder.large');
+const homePortfolioGallery=document.querySelector('.portfolio-strip .gallery-grid');
+if(homeFeature||homePortfolioGallery){fetch(`portfolio-data.js?updated=${Date.now()}`).then(response=>{if(!response.ok)throw new Error('Could not load portfolio');return response.text();}).then(source=>{const match=source.match(/window\.portfolioItems\s*=\s*(\[[\s\S]*\])\s*;?\s*$/);const items=match?JSON.parse(match[1]):[];const imageUrl=value=>String(value||'').replace(/[^a-zA-Z0-9_./-]/g,'');const homepageFeature=items.find(item=>item&&item.visible!==false&&item.displayAsHomepageFeature&&item.image);if(homeFeature&&homepageFeature){const image=document.createElement('img');image.src=imageUrl(homepageFeature.image);image.alt=String(homepageFeature.title||'Featured Cookies Cakes creation');image.style.cssText='display:block;width:100%;height:100%;object-fit:cover';homeFeature.innerHTML='';homeFeature.style.display='block';homeFeature.style.overflow='hidden';homeFeature.append(image);}if(homePortfolioGallery){const visible=items.filter(item=>item&&item.visible!==false&&item.image);const selected=visible.sort(()=>Math.random()-.5).slice(0,3);if(selected.length){homePortfolioGallery.innerHTML=selected.map((item,index)=>`<a class="home-portfolio-photo${index===0?' tall':''}" href="portfolio.html"><img src="${imageUrl(item.image)}" alt="${String(item.title||'Cookies Cakes creation').replace(/&/g,'&amp;').replace(/"/g,'&quot;').replace(/</g,'&lt;').replace(/>/g,'&gt;')}"></a>`).join('');}}}).catch(()=>{});}
 const tabIcon=document.querySelector('link[rel="icon"]');
 if(tabIcon){tabIcon.href='favicon.png';tabIcon.type='image/png';}
 

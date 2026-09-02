@@ -16,6 +16,7 @@ const normaliseItem = item => ({
   title: cleanText(item.title),
   portfolioType: normalisePortfolioType(item.portfolioType, item.title),
   displayAsFeature: Boolean(item.displayAsFeature),
+  displayAsHomepageFeature: Boolean(item.displayAsHomepageFeature),
   caption: cleanText(item.caption),
   instagram: cleanText(item.instagram),
   image: cleanText(item.image),
@@ -44,6 +45,7 @@ function updateItem(card) {
   item.instagram = cleanText(card.querySelector('[name="instagram"]').value);
   item.visible = card.querySelector('[name="visible"]').checked;
   item.displayAsFeature = card.querySelector('[name="displayAsFeature"]').checked && item.visible;
+  item.displayAsHomepageFeature = card.querySelector('[name="displayAsHomepageFeature"]').checked && item.visible;
 }
 
 function syncItems() {
@@ -104,6 +106,23 @@ function addFeatureCheckbox(card, item) {
   });
 }
 
+function addHomepageFeatureCheckbox(card, item) {
+  const label = document.createElement('label');
+  label.className = 'visible';
+  const checkbox = document.createElement('input');
+  checkbox.name = 'displayAsHomepageFeature';
+  checkbox.type = 'checkbox';
+  checkbox.checked = item.displayAsHomepageFeature;
+  label.append(checkbox, ' Display as Home page feature');
+  card.querySelector('[name="displayAsFeature"]').closest('label').after(label);
+  checkbox.addEventListener('change', () => {
+    syncItems();
+    if (checkbox.checked && item.visible) portfolioItems.forEach(entry => { entry.displayAsHomepageFeature = entry.id === item.id; });
+    else item.displayAsHomepageFeature = false;
+    renderItems();
+  });
+}
+
 function renderItems() {
   itemsMount.innerHTML = '';
   emptyState.hidden = portfolioItems.length !== 0;
@@ -117,6 +136,7 @@ function renderItems() {
     updateCardTitle();
     addPortfolioTypeSelect(card, item);
     addFeatureCheckbox(card, item);
+    addHomepageFeatureCheckbox(card, item);
     card.querySelector('[name="caption"]').value = item.caption;
     card.querySelector('[name="instagram"]').value = item.instagram;
     card.querySelector('[name="visible"]').checked = item.visible;
@@ -186,7 +206,7 @@ async function loadPortfolio() {
 
 function addItem() {
   syncItems();
-  portfolioItems.unshift(normaliseItem({ id: makeId(), title: '', portfolioType: 'cake', displayAsFeature: false, caption: '', instagram: '', image: '', visible: true }));
+  portfolioItems.unshift(normaliseItem({ id: makeId(), title: '', portfolioType: 'cake', displayAsFeature: false, displayAsHomepageFeature: false, caption: '', instagram: '', image: '', visible: true }));
   renderItems();
 }
 

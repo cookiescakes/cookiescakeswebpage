@@ -1,5 +1,15 @@
 window.portfolioItems = [
   {
+    "id": "homepage-feature-cake-video",
+    "title": "Cake in the making",
+    "portfolioType": "cake",
+    "caption": "",
+    "instagram": "",
+    "image": "portfolio-images/homepage-feature-cake.gif",
+    "displayAsHomepageFeature": true,
+    "visible": true
+  },
+  {
     "id": "portfolio-1788291491819-v55h3v",
     "title": "Double trouble birthday cake",
     "caption": "An 8 inch round cake with 3 layers of chocolate chip cake and chocolate butter cream. Featuring a fault line design with sprinkles in black and purple themes.",
