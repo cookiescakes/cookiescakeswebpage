@@ -12,6 +12,9 @@ document.querySelectorAll('.menu-toggle').forEach(btn=>{btn.addEventListener('cl
 const socialLinks={Instagram:'https://www.instagram.com/cookiescakes.uk/',Facebook:'https://www.facebook.com/profile.php?id=61591827583888'};
 document.querySelectorAll('.socials a,.social-buttons a').forEach(link=>{const name=link.textContent.trim().replace('→','').trim();if(socialLinks[name]){link.href=socialLinks[name];link.target='_blank';link.rel='noopener noreferrer';}if(name==='TikTok')link.remove();});
 
+const customCakeFeature=document.querySelector('.feature-grid .photo-placeholder.large');
+if(customCakeFeature){fetch(`portfolio-data.js?updated=${Date.now()}`).then(response=>{if(!response.ok)throw new Error('Could not load portfolio');return response.text();}).then(source=>{const match=source.match(/window\.portfolioItems\s*=\s*(\[[\s\S]*\])\s*;?\s*$/);const items=match?JSON.parse(match[1]):[];const feature=items.find(item=>item&&item.visible!==false&&item.displayAsFeature&&item.image);if(!feature)return;const image=document.createElement('img');image.src=String(feature.image).replace(/[^a-zA-Z0-9_./-]/g,'');image.alt=String(feature.title||'Featured custom cake');image.style.cssText='display:block;width:100%;height:100%;object-fit:contain;background:#f1e8f8';customCakeFeature.innerHTML='';customCakeFeature.style.display='block';customCakeFeature.style.overflow='hidden';customCakeFeature.append(image);}).catch(()=>{});}
+
 document.querySelectorAll('.brand-logo').forEach(logo=>{logo.style.borderRadius='0';logo.style.boxShadow='none';});
 document.querySelectorAll('.footer-logo').forEach(logo=>{logo.style.filter='invert(1)';});
 document.querySelectorAll('.site-footer').forEach(footer=>{footer.style.background='#1f1d1e';});

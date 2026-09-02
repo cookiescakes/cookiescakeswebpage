@@ -15,6 +15,7 @@ const normaliseItem = item => ({
   id: cleanText(item.id) || makeId(),
   title: cleanText(item.title),
   portfolioType: normalisePortfolioType(item.portfolioType, item.title),
+  displayAsFeature: Boolean(item.displayAsFeature),
   caption: cleanText(item.caption),
   instagram: cleanText(item.instagram),
   image: cleanText(item.image),
@@ -42,6 +43,7 @@ function updateItem(card) {
   item.caption = cleanText(card.querySelector('[name="caption"]').value);
   item.instagram = cleanText(card.querySelector('[name="instagram"]').value);
   item.visible = card.querySelector('[name="visible"]').checked;
+  item.displayAsFeature = card.querySelector('[name="displayAsFeature"]').checked && item.visible;
 }
 
 function syncItems() {
@@ -85,6 +87,23 @@ function addPortfolioTypeSelect(card, item) {
   card.querySelector('[name="title"]').closest('label').after(label);
 }
 
+function addFeatureCheckbox(card, item) {
+  const label = document.createElement('label');
+  label.className = 'visible';
+  const checkbox = document.createElement('input');
+  checkbox.name = 'displayAsFeature';
+  checkbox.type = 'checkbox';
+  checkbox.checked = item.displayAsFeature;
+  label.append(checkbox, ' Display as Custom Cakes feature');
+  card.querySelector('[name="visible"]').closest('label').after(label);
+  checkbox.addEventListener('change', () => {
+    syncItems();
+    if (checkbox.checked && item.visible) portfolioItems.forEach(entry => { entry.displayAsFeature = entry.id === item.id; });
+    else item.displayAsFeature = false;
+    renderItems();
+  });
+}
+
 function renderItems() {
   itemsMount.innerHTML = '';
   emptyState.hidden = portfolioItems.length !== 0;
@@ -97,6 +116,7 @@ function renderItems() {
     titleInput.value = item.title;
     updateCardTitle();
     addPortfolioTypeSelect(card, item);
+    addFeatureCheckbox(card, item);
     card.querySelector('[name="caption"]').value = item.caption;
     card.querySelector('[name="instagram"]').value = item.instagram;
     card.querySelector('[name="visible"]').checked = item.visible;
@@ -166,7 +186,7 @@ async function loadPortfolio() {
 
 function addItem() {
   syncItems();
-  portfolioItems.unshift(normaliseItem({ id: makeId(), title: '', portfolioType: 'cake', caption: '', instagram: '', image: '', visible: true }));
+  portfolioItems.unshift(normaliseItem({ id: makeId(), title: '', portfolioType: 'cake', displayAsFeature: false, caption: '', instagram: '', image: '', visible: true }));
   renderItems();
 }
 
