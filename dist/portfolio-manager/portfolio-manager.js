@@ -44,8 +44,8 @@ function updateItem(card) {
   item.caption = cleanText(card.querySelector('[name="caption"]').value);
   item.instagram = cleanText(card.querySelector('[name="instagram"]').value);
   item.visible = card.querySelector('[name="visible"]').checked;
-  item.displayAsFeature = card.querySelector('[name="displayAsFeature"]').checked && item.visible;
-  item.displayAsHomepageFeature = card.querySelector('[name="displayAsHomepageFeature"]').checked && item.visible;
+  item.displayAsFeature = card.querySelector('[name="displayAsFeature"]').checked;
+  item.displayAsHomepageFeature = card.querySelector('[name="displayAsHomepageFeature"]').checked;
 }
 
 function syncItems() {
@@ -100,7 +100,7 @@ function addFeatureCheckbox(card, item) {
   card.querySelector('[name="visible"]').closest('label').after(label);
   checkbox.addEventListener('change', () => {
     syncItems();
-    if (checkbox.checked && item.visible) portfolioItems.forEach(entry => { entry.displayAsFeature = entry.id === item.id; });
+    if (checkbox.checked) portfolioItems.forEach(entry => { entry.displayAsFeature = entry.id === item.id; });
     else item.displayAsFeature = false;
     renderItems();
   });
@@ -117,7 +117,7 @@ function addHomepageFeatureCheckbox(card, item) {
   card.querySelector('[name="displayAsFeature"]').closest('label').after(label);
   checkbox.addEventListener('change', () => {
     syncItems();
-    if (checkbox.checked && item.visible) portfolioItems.forEach(entry => { entry.displayAsHomepageFeature = entry.id === item.id; });
+    if (checkbox.checked) portfolioItems.forEach(entry => { entry.displayAsHomepageFeature = entry.id === item.id; });
     else item.displayAsHomepageFeature = false;
     renderItems();
   });
@@ -140,6 +140,7 @@ function renderItems() {
     card.querySelector('[name="caption"]').value = item.caption;
     card.querySelector('[name="instagram"]').value = item.instagram;
     card.querySelector('[name="visible"]').checked = item.visible;
+    card.querySelector('[name="visible"]').closest('label').lastChild.textContent = ' Show this on the portfolio';
     const photoName = card.querySelector('.photo-name');
     const image = pendingImages.get(item.id);
     photoName.textContent = image ? `New photo: ${image.file.name}` : (item.image ? 'Current photo selected' : 'No photo selected');
