@@ -10,9 +10,11 @@ let portfolioItems = [];
 const makeId = () => `portfolio-${Date.now()}-${Math.random().toString(36).slice(2, 8)}`;
 const setStatus = (message, error = false) => { status.textContent = message; status.classList.toggle('error', error); };
 const cleanText = value => String(value || '').trim();
+const normalisePortfolioType = (value, title) => value === 'cake' || value === 'treat' ? value : /cookie|brownie|blondie|cupcake|pie|treat|muffin|slice/i.test(title || '') ? 'treat' : 'cake';
 const normaliseItem = item => ({
   id: cleanText(item.id) || makeId(),
   title: cleanText(item.title),
+  portfolioType: normalisePortfolioType(item.portfolioType, item.title),
   caption: cleanText(item.caption),
   instagram: cleanText(item.instagram),
   image: cleanText(item.image),
@@ -36,6 +38,7 @@ function updateItem(card) {
   const item = portfolioItems.find(entry => entry.id === card.dataset.id);
   if (!item) return;
   item.title = cleanText(card.querySelector('[name="title"]').value);
+  item.portfolioType = normalisePortfolioType(card.querySelector('[name="portfolioType"]').value, item.title);
   item.caption = cleanText(card.querySelector('[name="caption"]').value);
   item.instagram = cleanText(card.querySelector('[name="instagram"]').value);
   item.visible = card.querySelector('[name="visible"]').checked;
@@ -70,6 +73,18 @@ async function cropAndSetPhoto(item, card, sourceFile) {
   card.querySelector('.preview').innerHTML = `<img src="${previewFor(item, file)}" alt="${item.title || 'Portfolio photo'}">`;
 }
 
+function addPortfolioTypeSelect(card, item) {
+  const label = document.createElement('label');
+  label.textContent = 'Portfolio type';
+  const select = document.createElement('select');
+  select.name = 'portfolioType';
+  select.innerHTML = '<option value="cake">Cake</option><option value="treat">Treat</option>';
+  select.value = item.portfolioType;
+  select.addEventListener('change', () => updateItem(card));
+  label.append(select);
+  card.querySelector('[name="title"]').closest('label').after(label);
+}
+
 function renderItems() {
   itemsMount.innerHTML = '';
   emptyState.hidden = portfolioItems.length !== 0;
@@ -81,6 +96,7 @@ function renderItems() {
     const updateCardTitle = () => { cardTitle.textContent = titleInput.value.trim() || 'Untitled photo'; };
     titleInput.value = item.title;
     updateCardTitle();
+    addPortfolioTypeSelect(card, item);
     card.querySelector('[name="caption"]').value = item.caption;
     card.querySelector('[name="instagram"]').value = item.instagram;
     card.querySelector('[name="visible"]').checked = item.visible;
@@ -150,7 +166,7 @@ async function loadPortfolio() {
 
 function addItem() {
   syncItems();
-  portfolioItems.unshift(normaliseItem({ id: makeId(), title: '', caption: '', instagram: '', image: '', visible: true }));
+  portfolioItems.unshift(normaliseItem({ id: makeId(), title: '', portfolioType: 'cake', caption: '', instagram: '', image: '', visible: true }));
   renderItems();
 }
 

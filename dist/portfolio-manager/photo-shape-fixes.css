@@ -1,1 +1,1 @@
-.preview img{object-fit:contain}
+.preview img{object-fit:contain}.fields select{width:100%;border:1px solid #dcd2e2;border-radius:11px;padding:10px 11px;color:var(--ink);font:inherit;background:#fff}.fields select:focus{outline:3px solid rgba(169,139,212,.2);border-color:var(--lilac)}
