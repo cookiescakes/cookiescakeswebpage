@@ -241,7 +241,7 @@ window.menuCatalogue = [
   },
   {
     "id": "item-1788290577136-x52eya",
-    "title": "Kinder stuffer cookie",
+    "title": "Kinder stuffed cookie",
     "category": "Cookies",
     "description": "A chocolate chip cookie stuffed with kinder pieces and spread. ",
     "price": "",
