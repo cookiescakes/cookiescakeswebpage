@@ -81,7 +81,7 @@ window.menuCatalogue = [
   },
   {
     "id": "item-1787775763052-ewq29f",
-    "title": "Gluten free Lemon & Blueberry Cheesecake",
+    "title": "Made without gluten Lemon & Blueberry Cheesecake",
     "category": "Cheese Cakes",
     "description": "",
     "price": "",
@@ -141,7 +141,7 @@ window.menuCatalogue = [
   },
   {
     "id": "item-1787776062919-efkagu",
-    "title": "Gluten Free Cookie",
+    "title": "Made without gluten Cookie",
     "category": "Cookies",
     "description": "",
     "price": "",
@@ -151,7 +151,7 @@ window.menuCatalogue = [
   },
   {
     "id": "item-1787776135068-ia31uc",
-    "title": "Gluten Free Millionaires Cheesecake",
+    "title": "Made without gluten Millionaires Cheesecake",
     "category": "Cheese Cakes",
     "description": "",
     "price": "",
@@ -161,7 +161,7 @@ window.menuCatalogue = [
   },
   {
     "id": "item-1787776246198-2m9pqh",
-    "title": "Gluten Free Lemon & Blueberry Muffin",
+    "title": "Made without gluten Lemon & Blueberry Muffin",
     "category": "Muffins",
     "description": "",
     "price": "",
@@ -171,7 +171,7 @@ window.menuCatalogue = [
   },
   {
     "id": "item-1788037882682-nqhcw4",
-    "title": "Gluten Free Lemon & Blueberry Cake",
+    "title": "Made without gluten Lemon & Blueberry Cake",
     "category": "Cakes",
     "description": "",
     "price": "£3.50",
@@ -181,7 +181,7 @@ window.menuCatalogue = [
   },
   {
     "id": "item-1788037938105-hx1pyq",
-    "title": "Gluten Free White Chocolate & Raspberry Cookie",
+    "title": "Made without gluten White Chocolate & Raspberry Cookie",
     "category": "Cookies",
     "description": "",
     "price": "£3.00",
@@ -191,7 +191,7 @@ window.menuCatalogue = [
   },
   {
     "id": "item-1788037991791-h29gng",
-    "title": "Gluten Free Rocky Road Cookie",
+    "title": "Made without gluten Rocky Road Cookie",
     "category": "Cookies",
     "description": "",
     "price": "£3.00",
