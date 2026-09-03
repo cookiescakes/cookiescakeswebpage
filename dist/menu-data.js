@@ -11,7 +11,7 @@ window.menuCatalogue = [
   },
   {
     "id": "example-treat",
-    "title": "Brownie",
+    "title": "Brownie 1",
     "category": "Brownies",
     "description": "A rich, fudgy chocolate brownie.",
     "price": "",
