@@ -159,7 +159,7 @@ export default {
       if (request.method !== 'GET') return response({ error: 'Method not allowed' }, 405);
       return menuDataResponse(request, env);
     }
-    if (url.pathname === '/api/suggestions') {
+    if (url.pathname === '/api/cake-suggestions') {
       if (request.method === 'OPTIONS') return new Response(null, { headers: corsHeaders });
       if (request.method !== 'POST') return response({ error: 'Method not allowed' }, 405);
       return saveSuggestion(request, env);
