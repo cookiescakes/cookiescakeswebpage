@@ -225,7 +225,7 @@ window.menuCatalogue = [
     "category": "slices",
     "description": "A biscoff filled cookie pie. ",
     "price": "",
-    "image": "",
+    "image": "images/1788549868766-item-1788290488360-4faju7-biscoff-cookie-pie.jpg",
     "glutenFree": false,
     "vegan": false
   },
@@ -255,7 +255,7 @@ window.menuCatalogue = [
     "category": "Cakes",
     "description": "A slice of school cake covered in icing and sprinkles. ",
     "price": "",
-    "image": "",
+    "image": "images/1788549826071-item-1788290632398-l9y68i-school-cake.jpg",
     "glutenFree": false,
     "vegan": false
   },
