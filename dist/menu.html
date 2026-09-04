@@ -26,10 +26,9 @@
     </div><p class="no-menu-results" hidden aria-live="polite">There are no matching items on this week's menu.</p></div></section>
     <section class="suggestion-section"><div class="container suggestion-box">
       <div><p class="eyebrow">Cake Shed</p><h2>Have a sweet idea?</h2><p>Tell us what you would love to see in the Cake Shed. Suggestions are anonymous — no name, email or login is needed.</p></div>
-      <form class="form-card compact-form" action="https://formspree.io/f/YOUR_SUGGESTION_FORM_ID" method="POST">
-        <input type="hidden" name="_subject" value="New Cake Shed suggestion">
+      <form id="suggestion-form" class="form-card compact-form">
         <label for="suggestion">Your suggestion</label><textarea id="suggestion" name="suggestion" rows="6" required placeholder="What cake, flavour or treat should we make next?"></textarea>
-        <button class="btn btn-primary" type="submit">Send suggestion</button><p class="form-note">Your message is sent privately to Cookies Cakes. We will not see your name or email.</p>
+        <button class="btn btn-primary" type="submit">Send suggestion</button><p id="suggestion-status" class="form-note" aria-live="polite">Your message is sent privately to Cookies Cakes. We will not see your name or email.</p>
       </form>
     </div></section>
   </main>

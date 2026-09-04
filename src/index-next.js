@@ -131,6 +131,21 @@ async function imageResponse(request, env, url) {
   return new Response(asset.body, { status: asset.status, headers });
 }
 
+async function saveSuggestion(request, env) {
+  if (!env.SUGGESTIONS) return response({ error: 'Suggestions are not available yet.' }, 503);
+  let payload;
+  try {
+    payload = await request.json();
+  } catch {
+    return response({ error: 'Please enter a suggestion.' }, 400);
+  }
+  const message = typeof payload.message === 'string' ? payload.message.replace(/\s+/g, ' ').trim() : '';
+  if (message.length < 2 || message.length > 1000) return response({ error: 'Please keep your suggestion between 2 and 1,000 characters.' }, 400);
+  const id = `${Date.now()}-${crypto.randomUUID()}`;
+  await env.SUGGESTIONS.put(`suggestion:${id}`, JSON.stringify({ id, message, receivedAt: new Date().toISOString() }));
+  return response({ ok: true }, 201);
+}
+
 export default {
   async fetch(request, env) {
     const url = new URL(request.url);
@@ -143,6 +158,11 @@ export default {
       if (request.method === 'OPTIONS') return new Response(null, { headers: corsHeaders });
       if (request.method !== 'GET') return response({ error: 'Method not allowed' }, 405);
       return menuDataResponse(request, env);
+    }
+    if (url.pathname === '/api/suggestions') {
+      if (request.method === 'OPTIONS') return new Response(null, { headers: corsHeaders });
+      if (request.method !== 'POST') return response({ error: 'Method not allowed' }, 405);
+      return saveSuggestion(request, env);
     }
     const endpoint = url.pathname === '/api/publish-menu' ? 'menu' : url.pathname === '/api/publish-portfolio' ? 'portfolio' : null;
     if (!endpoint) return env.ASSETS.fetch(request);
