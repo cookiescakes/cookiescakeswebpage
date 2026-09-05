@@ -317,6 +317,17 @@ window.menuCatalogue = [
     "glutenFree": false,
     "vegan": false,
     "soldOut": false
+  },
+  {
+    "id": "item-1788638480786-20acnw",
+    "title": "Biscoff Cookie Pie Pot",
+    "category": "slices",
+    "description": "",
+    "price": "£2.50",
+    "image": "",
+    "glutenFree": false,
+    "vegan": false,
+    "soldOut": false
   }
 ];
 
@@ -324,6 +335,7 @@ window.weeklyMenuSelection = [
   "item-1788290240045-by0u59",
   "item-1788290304767-bmxqp0",
   "item-1788290488360-4faju7",
+  "item-1788638480786-20acnw",
   "item-1788290529957-1zafg4",
   "item-1788290577136-x52eya",
   "item-1788290632398-l9y68i",
@@ -332,6 +344,7 @@ window.weeklyMenuSelection = [
 ];
 
 window.menuItemOrder = [
+  "item-1788290240045-by0u59",
   "item-1788613513978-5v3ybn",
   "item-1788037991791-h29gng",
   "item-1788037938105-hx1pyq",
@@ -353,9 +366,9 @@ window.menuItemOrder = [
   "item-1787776030136-bluvw9",
   "item-1787775763052-ewq29f",
   "item-1787775807044-ndigb6",
-  "item-1788290240045-by0u59",
   "item-1788290304767-bmxqp0",
   "item-1788290488360-4faju7",
+  "item-1788638480786-20acnw",
   "item-1788290529957-1zafg4",
   "item-1788290577136-x52eya",
   "item-1788290632398-l9y68i",
