@@ -250,7 +250,7 @@ window.menuCatalogue = [
     "image": "images/1788549868766-item-1788290488360-4faju7-biscoff-cookie-pie.jpg",
     "glutenFree": false,
     "vegan": false,
-    "soldOut": true
+    "soldOut": false
   },
   {
     "id": "item-1788290529957-1zafg4",
