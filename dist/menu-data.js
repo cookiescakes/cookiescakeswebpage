@@ -30,7 +30,7 @@ window.menuCatalogue = [
     "image": "images/1788380426204-item-1787774976927-vfaj5u-biscoff-brownie.jpg",
     "glutenFree": false,
     "vegan": false,
-    "soldOut": false
+    "soldOut": true
   },
   {
     "id": "item-1787775023160-g7qfdy",
