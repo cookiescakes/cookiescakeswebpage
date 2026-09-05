@@ -308,10 +308,10 @@ window.menuCatalogue = [
     "soldOut": false
   },
   {
-    "id": "item-1788613336920-rvdbua",
-    "title": "Biscoff Cookie Pie Pots",
-    "category": "slices",
-    "description": "A biscoff filled cookie pie, but in a smaller pot.",
+    "id": "item-1788613513978-5v3ybn",
+    "title": "Biscoff cookie pie pot",
+    "category": "Brownies",
+    "description": "",
     "price": "",
     "image": "",
     "glutenFree": false,
@@ -332,7 +332,7 @@ window.weeklyMenuSelection = [
 ];
 
 window.menuItemOrder = [
-  "item-1788613336920-rvdbua",
+  "item-1788613513978-5v3ybn",
   "item-1788037991791-h29gng",
   "item-1788037938105-hx1pyq",
   "item-1788037882682-nqhcw4",
