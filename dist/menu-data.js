@@ -306,6 +306,17 @@ window.menuCatalogue = [
     "glutenFree": false,
     "vegan": false,
     "soldOut": false
+  },
+  {
+    "id": "item-1788613336920-rvdbua",
+    "title": "Biscoff Cookie Pie Pots",
+    "category": "slices",
+    "description": "A biscoff filled cookie pie, but in a smaller pot.",
+    "price": "",
+    "image": "",
+    "glutenFree": false,
+    "vegan": false,
+    "soldOut": false
   }
 ];
 
@@ -321,6 +332,7 @@ window.weeklyMenuSelection = [
 ];
 
 window.menuItemOrder = [
+  "item-1788613336920-rvdbua",
   "item-1788037991791-h29gng",
   "item-1788037938105-hx1pyq",
   "item-1788037882682-nqhcw4",
