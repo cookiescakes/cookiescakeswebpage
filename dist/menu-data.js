@@ -322,9 +322,9 @@ window.menuCatalogue = [
     "id": "item-1788638480786-20acnw",
     "title": "Biscoff Cookie Pie Pot",
     "category": "slices",
-    "description": "",
+    "description": "Crumbled Biscoff pie with a chocolate drizzle",
     "price": "£2.50",
-    "image": "",
+    "image": "images/1788640884869-item-1788638480786-20acnw-biscoff-cookie-pie-pot.jpg",
     "glutenFree": false,
     "vegan": false,
     "soldOut": false
