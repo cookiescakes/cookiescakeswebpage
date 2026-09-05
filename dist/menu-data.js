@@ -7,7 +7,8 @@ window.menuCatalogue = [
     "price": "",
     "image": "images/1788380494878-example-cake-lemon-blueberry-cake-with-lemon-curd.jpg",
     "glutenFree": false,
-    "vegan": false
+    "vegan": false,
+    "soldOut": false
   },
   {
     "id": "example-treat",
@@ -17,7 +18,8 @@ window.menuCatalogue = [
     "price": "",
     "image": "",
     "glutenFree": false,
-    "vegan": false
+    "vegan": false,
+    "soldOut": false
   },
   {
     "id": "item-1787774976927-vfaj5u",
@@ -27,7 +29,8 @@ window.menuCatalogue = [
     "price": "£3.50",
     "image": "images/1788380426204-item-1787774976927-vfaj5u-biscoff-brownie.jpg",
     "glutenFree": false,
-    "vegan": false
+    "vegan": false,
+    "soldOut": false
   },
   {
     "id": "item-1787775023160-g7qfdy",
@@ -37,7 +40,8 @@ window.menuCatalogue = [
     "price": "",
     "image": "images/1788380677225-item-1787775023160-g7qfdy-salted-caramel-muffin.jpg",
     "glutenFree": false,
-    "vegan": false
+    "vegan": false,
+    "soldOut": false
   },
   {
     "id": "item-1787775204457-xccr08",
@@ -47,7 +51,8 @@ window.menuCatalogue = [
     "price": "£2.50",
     "image": "images/1788380699842-item-1787775204457-xccr08-triple-chocolate-chunk-muffin.jpg",
     "glutenFree": false,
-    "vegan": false
+    "vegan": false,
+    "soldOut": false
   },
   {
     "id": "item-1787775304460-ukfq40",
@@ -57,7 +62,8 @@ window.menuCatalogue = [
     "price": "",
     "image": "",
     "glutenFree": false,
-    "vegan": false
+    "vegan": false,
+    "soldOut": false
   },
   {
     "id": "item-1787775366438-ugwrul",
@@ -67,7 +73,8 @@ window.menuCatalogue = [
     "price": "£3.00",
     "image": "",
     "glutenFree": false,
-    "vegan": false
+    "vegan": false,
+    "soldOut": false
   },
   {
     "id": "item-1787775552342-tphnm8",
@@ -77,7 +84,8 @@ window.menuCatalogue = [
     "price": "£3.50",
     "image": "",
     "glutenFree": false,
-    "vegan": false
+    "vegan": false,
+    "soldOut": false
   },
   {
     "id": "item-1787775763052-ewq29f",
@@ -87,7 +95,8 @@ window.menuCatalogue = [
     "price": "",
     "image": "images/1788380795374-item-1787775763052-ewq29f-lemon-blueberry-cheesecake.jpg",
     "glutenFree": true,
-    "vegan": false
+    "vegan": false,
+    "soldOut": false
   },
   {
     "id": "item-1787775807044-ndigb6",
@@ -97,7 +106,8 @@ window.menuCatalogue = [
     "price": "",
     "image": "images/1788380575728-item-1787775807044-ndigb6-oreo-chocolate-cheesecake.jpg",
     "glutenFree": false,
-    "vegan": false
+    "vegan": false,
+    "soldOut": false
   },
   {
     "id": "item-1787775837058-tigdcd",
@@ -107,7 +117,8 @@ window.menuCatalogue = [
     "price": "£3.00",
     "image": "images/1788380647444-item-1787775837058-tigdcd-white-chocolate-raspberry-cookie.jpg",
     "glutenFree": false,
-    "vegan": false
+    "vegan": false,
+    "soldOut": false
   },
   {
     "id": "item-1787775974618-gw10oh",
@@ -117,7 +128,8 @@ window.menuCatalogue = [
     "price": "",
     "image": "",
     "glutenFree": false,
-    "vegan": true
+    "vegan": true,
+    "soldOut": false
   },
   {
     "id": "item-1787776006367-ci2qkk",
@@ -127,7 +139,8 @@ window.menuCatalogue = [
     "price": "£3.00",
     "image": "",
     "glutenFree": false,
-    "vegan": true
+    "vegan": true,
+    "soldOut": false
   },
   {
     "id": "item-1787776030136-bluvw9",
@@ -137,7 +150,8 @@ window.menuCatalogue = [
     "price": "",
     "image": "images/1788380617151-item-1787776030136-bluvw9-vegan-biscoff-cheesecake.jpg",
     "glutenFree": false,
-    "vegan": true
+    "vegan": true,
+    "soldOut": false
   },
   {
     "id": "item-1787776062919-efkagu",
@@ -147,7 +161,8 @@ window.menuCatalogue = [
     "price": "",
     "image": "",
     "glutenFree": true,
-    "vegan": false
+    "vegan": false,
+    "soldOut": false
   },
   {
     "id": "item-1787776135068-ia31uc",
@@ -157,7 +172,8 @@ window.menuCatalogue = [
     "price": "",
     "image": "images/1788380544744-item-1787776135068-ia31uc-gluten-free-millionaires-cheesecake.jpg",
     "glutenFree": true,
-    "vegan": false
+    "vegan": false,
+    "soldOut": false
   },
   {
     "id": "item-1787776246198-2m9pqh",
@@ -167,7 +183,8 @@ window.menuCatalogue = [
     "price": "",
     "image": "",
     "glutenFree": true,
-    "vegan": false
+    "vegan": false,
+    "soldOut": false
   },
   {
     "id": "item-1788037882682-nqhcw4",
@@ -177,7 +194,8 @@ window.menuCatalogue = [
     "price": "£3.50",
     "image": "",
     "glutenFree": true,
-    "vegan": false
+    "vegan": false,
+    "soldOut": false
   },
   {
     "id": "item-1788037938105-hx1pyq",
@@ -187,7 +205,8 @@ window.menuCatalogue = [
     "price": "£3.00",
     "image": "",
     "glutenFree": true,
-    "vegan": false
+    "vegan": false,
+    "soldOut": false
   },
   {
     "id": "item-1788037991791-h29gng",
@@ -197,7 +216,8 @@ window.menuCatalogue = [
     "price": "£3.00",
     "image": "",
     "glutenFree": false,
-    "vegan": false
+    "vegan": false,
+    "soldOut": false
   },
   {
     "id": "item-1788290240045-by0u59",
@@ -207,7 +227,8 @@ window.menuCatalogue = [
     "price": "",
     "image": "",
     "glutenFree": true,
-    "vegan": true
+    "vegan": true,
+    "soldOut": false
   },
   {
     "id": "item-1788290304767-bmxqp0",
@@ -217,7 +238,8 @@ window.menuCatalogue = [
     "price": "",
     "image": "",
     "glutenFree": false,
-    "vegan": true
+    "vegan": true,
+    "soldOut": false
   },
   {
     "id": "item-1788290488360-4faju7",
@@ -227,7 +249,8 @@ window.menuCatalogue = [
     "price": "",
     "image": "images/1788549868766-item-1788290488360-4faju7-biscoff-cookie-pie.jpg",
     "glutenFree": false,
-    "vegan": false
+    "vegan": false,
+    "soldOut": false
   },
   {
     "id": "item-1788290529957-1zafg4",
@@ -237,7 +260,8 @@ window.menuCatalogue = [
     "price": "",
     "image": "",
     "glutenFree": true,
-    "vegan": false
+    "vegan": false,
+    "soldOut": false
   },
   {
     "id": "item-1788290577136-x52eya",
@@ -247,7 +271,8 @@ window.menuCatalogue = [
     "price": "",
     "image": "",
     "glutenFree": true,
-    "vegan": false
+    "vegan": false,
+    "soldOut": false
   },
   {
     "id": "item-1788290632398-l9y68i",
@@ -257,7 +282,8 @@ window.menuCatalogue = [
     "price": "",
     "image": "images/1788549826071-item-1788290632398-l9y68i-school-cake.jpg",
     "glutenFree": false,
-    "vegan": false
+    "vegan": false,
+    "soldOut": false
   },
   {
     "id": "item-1788290668741-utmk7q",
@@ -267,7 +293,8 @@ window.menuCatalogue = [
     "price": "",
     "image": "",
     "glutenFree": false,
-    "vegan": false
+    "vegan": false,
+    "soldOut": false
   },
   {
     "id": "item-1788290727409-wqcvws",
@@ -277,7 +304,8 @@ window.menuCatalogue = [
     "price": "",
     "image": "",
     "glutenFree": false,
-    "vegan": false
+    "vegan": false,
+    "soldOut": false
   }
 ];
 
