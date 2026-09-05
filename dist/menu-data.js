@@ -247,7 +247,7 @@ window.menuCatalogue = [
     "category": "slices",
     "description": "A biscoff filled cookie pie. ",
     "price": "",
-    "image": "images/1788549868766-item-1788290488360-4faju7-biscoff-cookie-pie.jpg",
+    "image": "images/1788612588163-item-1788290488360-4faju7-biscoff-cookie-pie.jpg",
     "glutenFree": false,
     "vegan": false,
     "soldOut": false
