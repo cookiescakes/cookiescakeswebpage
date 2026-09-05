@@ -287,7 +287,7 @@ window.menuCatalogue = [
   },
   {
     "id": "item-1788290668741-utmk7q",
-    "title": "Raspberry and white chocolate muffin",
+    "title": "Lemon & Raspberry muffin",
     "category": "Muffins",
     "description": "Raspberry and white chocolate muffins with a white chocolate buttercream topping. ",
     "price": "",
