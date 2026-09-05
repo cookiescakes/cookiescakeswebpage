@@ -1,0 +1,2 @@
+.sold-out-stamp[hidden]{display:none!important}
+.sold-out-stamp{position:absolute;z-index:2;top:50%;left:50%;transform:translate(-50%,-50%) rotate(-9deg);border:3px solid #b42332;border-radius:6px;background:#b42332e8;color:#fff;padding:8px 14px;text-transform:uppercase;letter-spacing:.12em;font:800 13px "DM Sans",sans-serif;box-shadow:0 3px 12px #51101a55;white-space:nowrap}
