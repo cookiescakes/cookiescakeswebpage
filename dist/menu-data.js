@@ -301,7 +301,7 @@ window.menuCatalogue = [
     "title": "Tiramisu",
     "category": "fridge faves",
     "description": "A no bake Italian dessert made with layers of coffee soaked lady fingers and a rich mascapone cream. ",
-    "price": "",
+    "price": "£4.00",
     "image": "",
     "glutenFree": false,
     "vegan": false,
