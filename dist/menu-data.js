@@ -317,12 +317,117 @@ window.menuCatalogue = [
     "glutenFree": false,
     "vegan": false,
     "soldOut": false
+  },
+  {
+    "id": "item-1788724546974-j4uysk",
+    "title": "Sticky Toffee Muffins",
+    "category": "Muffins",
+    "description": "Based on a sticky toffee pudding, a sticky toffee muffin with toffee sauce and a toffee buttercream",
+    "price": "£3.00",
+    "image": "",
+    "glutenFree": false,
+    "vegan": false,
+    "soldOut": false
+  },
+  {
+    "id": "item-1788724781246-62k8ko",
+    "title": "Oreo and Nutella Cookie Pie",
+    "category": "slices",
+    "description": "An Oreo and Nutella Spread stuffed cookie pie. ",
+    "price": "£4.00",
+    "image": "",
+    "glutenFree": false,
+    "vegan": false,
+    "soldOut": false
+  },
+  {
+    "id": "item-1788724877150-n8ntdy",
+    "title": "Biscoff Muffin",
+    "category": "Muffins",
+    "description": "Made with Biscoff biscuits and filled with Biscoff spread and topped with a Biscoff buttercream",
+    "price": "£3.00",
+    "image": "",
+    "glutenFree": false,
+    "vegan": true,
+    "soldOut": false
+  },
+  {
+    "id": "item-1788724976103-yzidde",
+    "title": "Carrot Cake",
+    "category": "Cakes",
+    "description": "A yummy moist Carrot Cake with cream cheese butter cream",
+    "price": "£4.00",
+    "image": "",
+    "glutenFree": true,
+    "vegan": true,
+    "soldOut": false
+  },
+  {
+    "id": "item-1788725034647-94rjma",
+    "title": "Kinder Brownie",
+    "category": "Brownies",
+    "description": "A Brownie stuffed with Kinder pieces and white hazelnut spread",
+    "price": "£3.50",
+    "image": "",
+    "glutenFree": true,
+    "vegan": false,
+    "soldOut": false
+  },
+  {
+    "id": "item-1788725154847-8ve93r",
+    "title": "Brookie Bars",
+    "category": "Brownies",
+    "description": "A bar of moist brownie and cookie. ",
+    "price": "£3.50",
+    "image": "",
+    "glutenFree": false,
+    "vegan": false,
+    "soldOut": false
+  },
+  {
+    "id": "item-1788725193558-87gfm1",
+    "title": "Honeycomb Rocky Road",
+    "category": "slices",
+    "description": "Marshmallow, Biscuit, Chocolate and Honeycomb pieces. ",
+    "price": "£3.50",
+    "image": "",
+    "glutenFree": false,
+    "vegan": false,
+    "soldOut": false
+  },
+  {
+    "id": "item-1788725767349-oq8uqx",
+    "title": "Triple Chocolate Cookies",
+    "category": "Cookies",
+    "description": "",
+    "price": "£3.00",
+    "image": "",
+    "glutenFree": false,
+    "vegan": false,
+    "soldOut": false
   }
 ];
 
-window.weeklyMenuSelection = [];
+window.weeklyMenuSelection = [
+  "item-1788725767349-oq8uqx",
+  "item-1788725193558-87gfm1",
+  "item-1788725154847-8ve93r",
+  "item-1788725034647-94rjma",
+  "item-1788724976103-yzidde",
+  "item-1788724877150-n8ntdy",
+  "item-1788724781246-62k8ko",
+  "item-1788724546974-j4uysk"
+];
 
 window.menuItemOrder = [
+  "item-1788725767349-oq8uqx",
+  "item-1788725193558-87gfm1",
+  "item-1788725154847-8ve93r",
+  "item-1788725034647-94rjma",
+  "item-1788724976103-yzidde",
+  "item-1788724877150-n8ntdy",
+  "item-1788724781246-62k8ko",
+  "item-1788724546974-j4uysk",
   "item-1788290240045-by0u59",
   "item-1788037991791-h29gng",
   "item-1788037938105-hx1pyq",
