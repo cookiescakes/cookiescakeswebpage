@@ -312,7 +312,7 @@ window.menuCatalogue = [
     "title": "Biscoff cookie pie pot",
     "category": "Brownies",
     "description": "",
-    "price": "",
+    "price": "£2.50",
     "image": "",
     "glutenFree": false,
     "vegan": false,
@@ -331,17 +331,7 @@ window.menuCatalogue = [
   }
 ];
 
-window.weeklyMenuSelection = [
-  "item-1788290240045-by0u59",
-  "item-1788290304767-bmxqp0",
-  "item-1788290488360-4faju7",
-  "item-1788638480786-20acnw",
-  "item-1788290529957-1zafg4",
-  "item-1788290577136-x52eya",
-  "item-1788290632398-l9y68i",
-  "item-1788290668741-utmk7q",
-  "item-1788290727409-wqcvws"
-];
+window.weeklyMenuSelection = [];
 
 window.menuItemOrder = [
   "item-1788290240045-by0u59",
