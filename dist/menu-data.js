@@ -71,7 +71,7 @@ window.menuCatalogue = [
     "category": "Cookies",
     "description": "Crisp, golden-brown edges, a thick and wonderfully chewy centre, and rich pools of melted chocolate from hand-chopped white milk and dark chocolate bars.",
     "price": "£3.00",
-    "image": "",
+    "image": "images/1788782097141-item-1787775366438-ugwrul-chocolate-chunk-cookie.jpg",
     "glutenFree": false,
     "vegan": false,
     "soldOut": false
@@ -82,7 +82,7 @@ window.menuCatalogue = [
     "category": "Brownies",
     "description": "a decadent treat featuring a rich, fudgy chocolate base topped with a sweet, crunchy layer of caramel-coated cornflakes",
     "price": "£3.50",
-    "image": "",
+    "image": "images/1788781863234-item-1787775552342-tphnm8-salted-caramel-cornflake-brownie.jpg",
     "glutenFree": false,
     "vegan": false,
     "soldOut": false
@@ -137,7 +137,7 @@ window.menuCatalogue = [
     "category": "Muffins",
     "description": "",
     "price": "£3.00",
-    "image": "",
+    "image": "images/1788782502643-item-1787776006367-ci2qkk-chocolate-muffin.jpg",
     "glutenFree": false,
     "vegan": true,
     "soldOut": false
@@ -188,34 +188,34 @@ window.menuCatalogue = [
   },
   {
     "id": "item-1788037882682-nqhcw4",
-    "title": "Made without gluten Lemon & Blueberry Cake",
+    "title": "Lemon & Blueberry Cake",
     "category": "Cakes",
     "description": "",
     "price": "£4.00",
-    "image": "",
+    "image": "images/1788782020939-item-1788037882682-nqhcw4-lemon-blueberry-cake.jpg",
     "glutenFree": true,
     "vegan": false,
     "soldOut": false
   },
   {
     "id": "item-1788037938105-hx1pyq",
-    "title": "Made without gluten White Chocolate & Raspberry Cookie",
+    "title": "WG / White Chocolate & Raspberry Cookie",
     "category": "Cookies",
     "description": "",
     "price": "£3.00",
-    "image": "",
+    "image": "images/1788782277264-item-1788037938105-hx1pyq-wg-white-chocolate-raspberry-cookie.jpg",
     "glutenFree": true,
     "vegan": false,
     "soldOut": false
   },
   {
     "id": "item-1788037991791-h29gng",
-    "title": "Made without gluten Rocky Road Cookie",
+    "title": " Rocky Road Cookie",
     "category": "Cookies",
     "description": "",
     "price": "£3.00",
-    "image": "",
-    "glutenFree": false,
+    "image": "images/1788782198572-item-1788037991791-h29gng-rocky-road-cookie.jpg",
+    "glutenFree": true,
     "vegan": false,
     "soldOut": false
   },
@@ -225,7 +225,7 @@ window.menuCatalogue = [
     "category": "Cakes",
     "description": "A yummy slice of coffee and walnut cake with a coffee buttercream filling.",
     "price": "£4.50",
-    "image": "",
+    "image": "images/1788781892214-item-1788290240045-by0u59-coffee-and-walnut-cake.jpg",
     "glutenFree": true,
     "vegan": true,
     "soldOut": false
@@ -291,7 +291,7 @@ window.menuCatalogue = [
     "category": "Muffins",
     "description": "Raspberry and white chocolate muffins with a white chocolate buttercream topping. ",
     "price": "£3.00",
-    "image": "",
+    "image": "images/1788782522226-item-1788290668741-utmk7q-lemon-raspberry-muffin.jpg",
     "glutenFree": false,
     "vegan": false,
     "soldOut": false
