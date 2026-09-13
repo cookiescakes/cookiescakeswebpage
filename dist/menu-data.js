@@ -335,7 +335,7 @@ window.menuCatalogue = [
     "category": "slices",
     "description": "An Oreo and Nutella Spread stuffed cookie pie. ",
     "price": "£4.00",
-    "image": "",
+    "image": "images/1789294903757-item-1788724781246-62k8ko-oreo-and-nutella-cookie-pie.jpg",
     "glutenFree": false,
     "vegan": false,
     "soldOut": false
@@ -346,7 +346,7 @@ window.menuCatalogue = [
     "category": "Muffins",
     "description": "Made with Biscoff biscuits and filled with Biscoff spread and topped with a Biscoff buttercream",
     "price": "£3.00",
-    "image": "",
+    "image": "images/1789294935317-item-1788724877150-n8ntdy-biscoff-muffin.jpg",
     "glutenFree": false,
     "vegan": true,
     "soldOut": false
@@ -368,7 +368,7 @@ window.menuCatalogue = [
     "category": "Brownies",
     "description": "A Brownie stuffed with Kinder pieces and white hazelnut spread",
     "price": "£3.50",
-    "image": "",
+    "image": "images/1789294886823-item-1788725034647-94rjma-kinder-brownie.jpg",
     "glutenFree": true,
     "vegan": false,
     "soldOut": false
@@ -401,7 +401,7 @@ window.menuCatalogue = [
     "category": "Cookies",
     "description": "",
     "price": "£3.00",
-    "image": "",
+    "image": "images/1789294866877-item-1788725767349-oq8uqx-triple-chocolate-cookies.jpg",
     "glutenFree": false,
     "vegan": false,
     "soldOut": false
