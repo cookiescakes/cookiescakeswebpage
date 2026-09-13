@@ -283,7 +283,7 @@ window.menuCatalogue = [
     "image": "images/1788549826071-item-1788290632398-l9y68i-school-cake.jpg",
     "glutenFree": false,
     "vegan": false,
-    "soldOut": false
+    "soldOut": true
   },
   {
     "id": "item-1788290668741-utmk7q",
@@ -404,7 +404,7 @@ window.menuCatalogue = [
     "image": "images/1789294866877-item-1788725767349-oq8uqx-triple-chocolate-cookies.jpg",
     "glutenFree": false,
     "vegan": false,
-    "soldOut": false
+    "soldOut": true
   }
 ];
 
@@ -416,7 +416,8 @@ window.weeklyMenuSelection = [
   "item-1788724976103-yzidde",
   "item-1788724877150-n8ntdy",
   "item-1788724781246-62k8ko",
-  "item-1788724546974-j4uysk"
+  "item-1788724546974-j4uysk",
+  "item-1788290632398-l9y68i"
 ];
 
 window.menuItemOrder = [
