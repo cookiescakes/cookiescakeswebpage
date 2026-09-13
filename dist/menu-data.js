@@ -324,7 +324,7 @@ window.menuCatalogue = [
     "category": "Muffins",
     "description": "Based on a sticky toffee pudding, a sticky toffee muffin with toffee sauce and a toffee buttercream",
     "price": "£3.00",
-    "image": "",
+    "image": "images/1789295050866-item-1788724546974-j4uysk-sticky-toffee-muffins.jpg",
     "glutenFree": false,
     "vegan": false,
     "soldOut": false
