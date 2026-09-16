@@ -408,17 +408,7 @@ window.menuCatalogue = [
   }
 ];
 
-window.weeklyMenuSelection = [
-  "item-1788725767349-oq8uqx",
-  "item-1788725193558-87gfm1",
-  "item-1788725154847-8ve93r",
-  "item-1788725034647-94rjma",
-  "item-1788724976103-yzidde",
-  "item-1788724877150-n8ntdy",
-  "item-1788724781246-62k8ko",
-  "item-1788724546974-j4uysk",
-  "item-1788290632398-l9y68i"
-];
+window.weeklyMenuSelection = [];
 
 window.menuItemOrder = [
   "item-1788725767349-oq8uqx",
