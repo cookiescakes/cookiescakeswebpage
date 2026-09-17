@@ -224,7 +224,7 @@ window.menuCatalogue = [
     "title": "Coffee and walnut cake",
     "category": "Cakes",
     "description": "A yummy slice of coffee and walnut cake with a coffee buttercream filling.",
-    "price": "£4.50",
+    "price": "£4.00",
     "image": "images/1788781892214-item-1788290240045-by0u59-coffee-and-walnut-cake.jpg",
     "glutenFree": true,
     "vegan": true,
