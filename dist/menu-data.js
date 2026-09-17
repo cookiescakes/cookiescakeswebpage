@@ -72,7 +72,7 @@ window.menuCatalogue = [
     "description": "Crisp, golden-brown edges, a thick and wonderfully chewy centre, and rich pools of melted chocolate from hand-chopped white milk and dark chocolate bars.",
     "price": "£3.00",
     "image": "images/1788782097141-item-1787775366438-ugwrul-chocolate-chunk-cookie.jpg",
-    "glutenFree": false,
+    "glutenFree": true,
     "vegan": false,
     "soldOut": false
   },
@@ -90,7 +90,7 @@ window.menuCatalogue = [
   {
     "id": "item-1787775763052-ewq29f",
     "title": "Lemon & Blueberry Cheesecake",
-    "category": "Cheese Cakes",
+    "category": "Cheesecakes",
     "description": "",
     "price": "£4.00",
     "image": "images/1788380795374-item-1787775763052-ewq29f-lemon-blueberry-cheesecake.jpg",
@@ -101,7 +101,7 @@ window.menuCatalogue = [
   {
     "id": "item-1787775807044-ndigb6",
     "title": "Oreo/chocolate Cheesecake",
-    "category": "Cheese Cakes",
+    "category": "Cheesecakes",
     "description": "",
     "price": "£4.00",
     "image": "images/1788380575728-item-1787775807044-ndigb6-oreo-chocolate-cheesecake.jpg",
@@ -145,7 +145,7 @@ window.menuCatalogue = [
   {
     "id": "item-1787776030136-bluvw9",
     "title": "Biscoff Cheesecake",
-    "category": "Cheese Cakes",
+    "category": "Cheesecakes",
     "description": "",
     "price": "£4.00",
     "image": "images/1788380617151-item-1787776030136-bluvw9-vegan-biscoff-cheesecake.jpg",
@@ -167,7 +167,7 @@ window.menuCatalogue = [
   {
     "id": "item-1787776135068-ia31uc",
     "title": "Millionaires Cheesecake",
-    "category": "Cheese Cakes",
+    "category": "Cheesecakes",
     "description": "",
     "price": "£4.00",
     "image": "images/1788380544744-item-1787776135068-ia31uc-gluten-free-millionaires-cheesecake.jpg",
@@ -287,7 +287,7 @@ window.menuCatalogue = [
   },
   {
     "id": "item-1788290668741-utmk7q",
-    "title": "Lemon & Raspberry muffin",
+    "title": "Lemon & Raspberry Muffin",
     "category": "Muffins",
     "description": "Raspberry and white chocolate muffins with a white chocolate buttercream topping. ",
     "price": "£3.00",
@@ -405,12 +405,124 @@ window.menuCatalogue = [
     "glutenFree": false,
     "vegan": false,
     "soldOut": true
+  },
+  {
+    "id": "item-1789675771270-99molc",
+    "title": "Chocolate Orange Muffin",
+    "category": "Muffins",
+    "description": "",
+    "price": "£3.00",
+    "image": "",
+    "glutenFree": false,
+    "vegan": true,
+    "soldOut": false
+  },
+  {
+    "id": "item-1789675807081-c7yq4t",
+    "title": "Chocolate Orange Muffin",
+    "category": "Muffins",
+    "description": "",
+    "price": "£3.00",
+    "image": "",
+    "glutenFree": true,
+    "vegan": false,
+    "soldOut": false
+  },
+  {
+    "id": "item-1789675831268-fzmijk",
+    "title": "Chocolate Orange Muffin",
+    "category": "Muffins",
+    "description": "",
+    "price": "£3.00",
+    "image": "",
+    "glutenFree": false,
+    "vegan": false,
+    "soldOut": false
+  },
+  {
+    "id": "item-1789676166533-6edcsp",
+    "title": "Oreo Cookie",
+    "category": "Cookies",
+    "description": "",
+    "price": "£3.50",
+    "image": "",
+    "glutenFree": false,
+    "vegan": false,
+    "soldOut": false
+  },
+  {
+    "id": "item-1789676253819-fck8bq",
+    "title": "Caramel Cookies",
+    "category": "Cookies",
+    "description": "",
+    "price": "£3.50",
+    "image": "",
+    "glutenFree": false,
+    "vegan": false,
+    "soldOut": false
+  },
+  {
+    "id": "item-1789676322967-g92w8k",
+    "title": "Nutella Cheesecake",
+    "category": "Cheese Cakes",
+    "description": "",
+    "price": "£4.00",
+    "image": "",
+    "glutenFree": false,
+    "vegan": false,
+    "soldOut": false
+  },
+  {
+    "id": "item-1789676408214-s5zo3d",
+    "title": "Toffee Apple Cake",
+    "category": "Brownies",
+    "description": "",
+    "price": "£4.00",
+    "image": "",
+    "glutenFree": false,
+    "vegan": false,
+    "soldOut": false
+  },
+  {
+    "id": "item-1789676508782-96eukj",
+    "title": "Millionaires Shortbread",
+    "category": "Brownies",
+    "description": "",
+    "price": "£2.50",
+    "image": "",
+    "glutenFree": false,
+    "vegan": false,
+    "soldOut": false
   }
 ];
 
-window.weeklyMenuSelection = [];
+window.weeklyMenuSelection = [
+  "item-1789676508782-96eukj",
+  "item-1789676408214-s5zo3d",
+  "item-1789676322967-g92w8k",
+  "item-1789676253819-fck8bq",
+  "item-1789676166533-6edcsp",
+  "item-1789675831268-fzmijk",
+  "item-1789675807081-c7yq4t",
+  "item-1789675771270-99molc",
+  "item-1788037938105-hx1pyq",
+  "item-1787775366438-ugwrul",
+  "item-1787775837058-tigdcd",
+  "item-1787775304460-ukfq40",
+  "item-1787775974618-gw10oh",
+  "item-1788290304767-bmxqp0",
+  "item-1788290668741-utmk7q"
+];
 
 window.menuItemOrder = [
+  "item-1789676508782-96eukj",
+  "item-1789676408214-s5zo3d",
+  "item-1789676322967-g92w8k",
+  "item-1789676253819-fck8bq",
+  "item-1789676166533-6edcsp",
+  "item-1789675831268-fzmijk",
+  "item-1789675807081-c7yq4t",
+  "item-1789675771270-99molc",
   "item-1788725767349-oq8uqx",
   "item-1788725193558-87gfm1",
   "item-1788725154847-8ve93r",
@@ -454,6 +566,7 @@ window.menuCategories = [
   "Brownies",
   "Cakes",
   "Cheese Cakes",
+  "Cheesecakes",
   "Cookies",
   "fridge faves",
   "Muffins",
