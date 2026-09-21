@@ -493,28 +493,82 @@ window.menuCatalogue = [
     "glutenFree": false,
     "vegan": false,
     "soldOut": false
+  },
+  {
+    "id": "item-1790018735533-a2iiz0",
+    "title": "Fudge brownies ",
+    "category": "Brownies",
+    "description": "",
+    "price": "£3.50",
+    "image": "",
+    "glutenFree": false,
+    "vegan": false,
+    "soldOut": false
+  },
+  {
+    "id": "item-1790018738178-56kukb",
+    "title": "Crunchie Cookie Pie",
+    "category": "slices",
+    "description": "A yummy crunchie and chocolate filled cookie pie. ",
+    "price": "£4.50",
+    "image": "",
+    "glutenFree": false,
+    "vegan": false,
+    "soldOut": false
+  },
+  {
+    "id": "item-1790018879571-8juans",
+    "title": "Caramel oaties",
+    "category": "slices",
+    "description": "",
+    "price": "£4.00",
+    "image": "",
+    "glutenFree": false,
+    "vegan": false,
+    "soldOut": false
+  },
+  {
+    "id": "item-1790018928875-ei2fsb",
+    "title": "Pumpkin spiced banana bread ",
+    "category": "Cakes",
+    "description": "A moist banana bread with the warming pumpkin spice flavors of autumn ",
+    "price": "£4.00",
+    "image": "",
+    "glutenFree": false,
+    "vegan": false,
+    "soldOut": false
+  },
+  {
+    "id": "item-1790019089360-s10c6j",
+    "title": "Biscoff Cookie",
+    "category": "Cookies",
+    "description": "A biscoff stuffed chocolate chip cookie with biscoff crumb.",
+    "price": "£3.50",
+    "image": "images/1790019187627-item-1790019089360-s10c6j-biscoff-cookie.jpg",
+    "glutenFree": false,
+    "vegan": false,
+    "soldOut": false
   }
 ];
 
 window.weeklyMenuSelection = [
-  "item-1789676253819-fck8bq",
-  "item-1787775366438-ugwrul",
-  "item-1789675831268-fzmijk",
-  "item-1789675807081-c7yq4t",
-  "item-1789675771270-99molc",
-  "item-1787775304460-ukfq40",
-  "item-1787775974618-gw10oh",
+  "item-1790019089360-s10c6j",
+  "item-1790018928875-ei2fsb",
+  "item-1790018879571-8juans",
+  "item-1790018738178-56kukb",
+  "item-1790018735533-a2iiz0",
   "item-1788290668741-utmk7q",
-  "item-1789676508782-96eukj",
-  "item-1789676322967-g92w8k",
-  "item-1789676166533-6edcsp",
-  "item-1788290304767-bmxqp0",
-  "item-1789676408214-s5zo3d",
-  "item-1788037938105-hx1pyq",
-  "item-1787775837058-tigdcd"
+  "item-1788725193558-87gfm1",
+  "item-1788037882682-nqhcw4",
+  "item-1788290632398-l9y68i"
 ];
 
 window.menuItemOrder = [
+  "item-1790019089360-s10c6j",
+  "item-1790018928875-ei2fsb",
+  "item-1790018879571-8juans",
+  "item-1790018738178-56kukb",
+  "item-1790018735533-a2iiz0",
   "item-1789676253819-fck8bq",
   "item-1787775366438-ugwrul",
   "item-1789675831268-fzmijk",
