@@ -193,7 +193,7 @@ window.menuCatalogue = [
     "description": "",
     "price": "£4.00",
     "image": "images/1788782020939-item-1788037882682-nqhcw4-lemon-blueberry-cake.jpg",
-    "glutenFree": true,
+    "glutenFree": false,
     "vegan": false,
     "soldOut": false
   },
@@ -283,7 +283,7 @@ window.menuCatalogue = [
     "image": "images/1788549826071-item-1788290632398-l9y68i-school-cake.jpg",
     "glutenFree": false,
     "vegan": false,
-    "soldOut": true
+    "soldOut": false
   },
   {
     "id": "item-1788290668741-utmk7q",
