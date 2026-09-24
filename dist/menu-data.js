@@ -280,7 +280,7 @@ window.menuCatalogue = [
     "category": "Cakes",
     "description": "A slice of school cake covered in icing and sprinkles. ",
     "price": "£3.50",
-    "image": "images/1788549826071-item-1788290632398-l9y68i-school-cake.jpg",
+    "image": "images/1790280069594-item-1788290632398-l9y68i-school-cake.jpg",
     "glutenFree": false,
     "vegan": false,
     "soldOut": false
