@@ -390,7 +390,7 @@ window.menuCatalogue = [
     "category": "slices",
     "description": "Marshmallow, Biscuit, Chocolate and Honeycomb pieces. ",
     "price": "£3.50",
-    "image": "",
+    "image": "images/1790278798307-item-1788725193558-87gfm1-honeycomb-rocky-road.jpg",
     "glutenFree": false,
     "vegan": false,
     "soldOut": false
@@ -544,7 +544,7 @@ window.menuCatalogue = [
     "category": "Cookies",
     "description": "A biscoff stuffed chocolate chip cookie with biscoff crumb.",
     "price": "£3.50",
-    "image": "images/1790019187627-item-1790019089360-s10c6j-biscoff-cookie.jpg",
+    "image": "images/1790278661637-item-1790019089360-s10c6j-biscoff-cookie.jpg",
     "glutenFree": false,
     "vegan": false,
     "soldOut": false
