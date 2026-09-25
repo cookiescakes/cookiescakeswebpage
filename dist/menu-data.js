@@ -532,7 +532,7 @@ window.menuCatalogue = [
     "title": "Pumpkin spiced banana bread ",
     "category": "Cakes",
     "description": "A moist banana bread with the warming pumpkin spice flavors of autumn ",
-    "price": "£4.00",
+    "price": "£3.00",
     "image": "",
     "glutenFree": false,
     "vegan": false,
