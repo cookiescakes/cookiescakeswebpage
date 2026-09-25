@@ -521,7 +521,7 @@ window.menuCatalogue = [
     "title": "Caramel oaties",
     "category": "slices",
     "description": "",
-    "price": "£4.00",
+    "price": "£3.50",
     "image": "",
     "glutenFree": false,
     "vegan": false,
