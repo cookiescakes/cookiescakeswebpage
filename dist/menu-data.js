@@ -510,7 +510,7 @@ window.menuCatalogue = [
     "title": "Crunchie Cookie Pie",
     "category": "slices",
     "description": "A yummy crunchie and chocolate filled cookie pie. ",
-    "price": "£4.50",
+    "price": "£4.00",
     "image": "",
     "glutenFree": false,
     "vegan": false,
