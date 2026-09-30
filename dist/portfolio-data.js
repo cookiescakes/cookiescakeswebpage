@@ -16,7 +16,7 @@ window.portfolioItems = [
     "portfolioType": "cake",
     "displayAsFeature": false,
     "displayAsHomepageFeature": false,
-    "caption": "1st birthday cake. Filled with berry jam and vanilla butter cream.",
+    "caption": "1st birthday cake. Filled with berry jam and vanilla buttercream.",
     "instagram": "",
     "image": "portfolio-images/1790279847432-portfolio-1790279801408-923tvc-portfolio-photo.jpg",
     "visible": true
@@ -49,7 +49,7 @@ window.portfolioItems = [
     "portfolioType": "cake",
     "displayAsFeature": false,
     "displayAsHomepageFeature": false,
-    "caption": "A yummy Victoria cake with raspberry jam. A navy blue with lotds of flowers in different methods.",
+    "caption": "A yummy Victoria cake with raspberry jam. A navy blue with lots of flowers in different methods.",
     "instagram": "",
     "image": "portfolio-images/1790279467561-portfolio-1790279378253-ozpp31-portfolio-photo.jpg",
     "visible": true
@@ -60,7 +60,7 @@ window.portfolioItems = [
     "portfolioType": "cake",
     "displayAsFeature": false,
     "displayAsHomepageFeature": false,
-    "caption": "Biscoff Biscoff Biscoff. A loaded biscoff cake. Biscoff cake. Biscoff filling. Biscoff buttercream. Biscoff drip. Biscoff Biscuits. Biscoff stuffed cookies.",
+    "caption": "Biscoff Biscoff Biscoff! A loaded biscoff cake; Biscoff cake. Biscoff filling. Biscoff buttercream. Biscoff drip. Biscoff Biscuits. Biscoff stuffed cookies.",
     "instagram": "",
     "image": "portfolio-images/1790279228147-portfolio-1790279211966-8iieef-portfolio-photo.jpg",
     "visible": true
@@ -93,7 +93,7 @@ window.portfolioItems = [
     "portfolioType": "cake",
     "displayAsFeature": false,
     "displayAsHomepageFeature": false,
-    "caption": "An 8 inch round cake with 3 layers of chocolate chip cake and chocolate butter cream. Featuring a fault line design with sprinkles in black and purple themes.",
+    "caption": "An 8 inch round cake with 3 layers of chocolate chip cake and chocolate buttercream. Featuring a fault line design with sprinkles in black and purple themes.",
     "instagram": "",
     "image": "portfolio-images/1788291538205-portfolio-1788291491819-v55h3v-portfolio-photo.jpg",
     "visible": true
