@@ -464,7 +464,7 @@ window.menuCatalogue = [
   {
     "id": "item-1789676322967-g92w8k",
     "title": "Nutella Cheesecake",
-    "category": "Cheese Cakes",
+    "category": "Cheesecakes",
     "description": "",
     "price": "£4.00",
     "image": "",
@@ -475,7 +475,7 @@ window.menuCatalogue = [
   {
     "id": "item-1789676408214-s5zo3d",
     "title": "Toffee Apple Cake",
-    "category": "Brownies",
+    "category": "Cakes",
     "description": "",
     "price": "£4.00",
     "image": "",
@@ -486,7 +486,7 @@ window.menuCatalogue = [
   {
     "id": "item-1789676508782-96eukj",
     "title": "Millionaires Shortbread",
-    "category": "Brownies",
+    "category": "slices",
     "description": "",
     "price": "£2.50",
     "image": "",
@@ -548,22 +548,83 @@ window.menuCatalogue = [
     "glutenFree": false,
     "vegan": false,
     "soldOut": false
+  },
+  {
+    "id": "item-1790796702902-s0fsit",
+    "title": "Spiderweb Brownie",
+    "category": "Brownies",
+    "description": "A smores inspired brownie with marshmallow spiderweb topping and Halloween sprinkles. ",
+    "price": "£3.50",
+    "image": "",
+    "glutenFree": false,
+    "vegan": false,
+    "soldOut": false
+  },
+  {
+    "id": "item-1790796865124-9r006b",
+    "title": "Halloween spiced sugar cookies",
+    "category": "Cookies",
+    "description": "Lovely soft pumpkin spiced sugar cookies with royal icing decorations and sprinkles. ",
+    "price": "£2.50",
+    "image": "",
+    "glutenFree": false,
+    "vegan": false,
+    "soldOut": false
+  },
+  {
+    "id": "item-1790797087850-992ott",
+    "title": "Chocolate Nutella cake Pots ",
+    "category": "Cakes",
+    "description": "Chocolate sponge cake with nutella buttercream. ",
+    "price": "£3.50",
+    "image": "",
+    "glutenFree": false,
+    "vegan": false,
+    "soldOut": false
+  },
+  {
+    "id": "item-1790797345636-ei3bsy",
+    "title": "Chai Late Cheesecake",
+    "category": "Cheesecakes",
+    "description": "A spiced coffee cheesecake with a crumbly biscuit base",
+    "price": "£4.00",
+    "image": "",
+    "glutenFree": false,
+    "vegan": false,
+    "soldOut": false
+  },
+  {
+    "id": "item-1790797435354-73th26",
+    "title": "Halloween Cupcakes",
+    "category": "Muffins",
+    "description": "Monster / Halloween themed vanilla cupcakes",
+    "price": "£3.50",
+    "image": "",
+    "glutenFree": false,
+    "vegan": false,
+    "soldOut": false
   }
 ];
 
 window.weeklyMenuSelection = [
-  "item-1790019089360-s10c6j",
-  "item-1790018928875-ei2fsb",
-  "item-1790018879571-8juans",
-  "item-1790018738178-56kukb",
-  "item-1790018735533-a2iiz0",
-  "item-1788290668741-utmk7q",
-  "item-1788725193558-87gfm1",
-  "item-1788037882682-nqhcw4",
+  "item-1790797435354-73th26",
+  "item-1790797345636-ei3bsy",
+  "item-1790797087850-992ott",
+  "item-1790796865124-9r006b",
+  "item-1790796702902-s0fsit",
+  "item-1788725154847-8ve93r",
+  "item-1788724877150-n8ntdy",
+  "item-1788037991791-h29gng",
+  "item-1789676408214-s5zo3d",
   "item-1788290632398-l9y68i"
 ];
 
 window.menuItemOrder = [
+  "item-1790797435354-73th26",
+  "item-1790797345636-ei3bsy",
+  "item-1790797087850-992ott",
+  "item-1790796865124-9r006b",
+  "item-1790796702902-s0fsit",
   "item-1790019089360-s10c6j",
   "item-1790018928875-ei2fsb",
   "item-1790018879571-8juans",
