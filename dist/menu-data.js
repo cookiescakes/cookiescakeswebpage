@@ -385,14 +385,14 @@ window.menuCatalogue = [
   },
   {
     "id": "item-1788724976103-yzidde",
-    "title": "Carrot Cake",
+    "title": "Carrot Cake Pots",
     "category": "Cakes",
     "description": "A yummy moist Carrot Cake with cream cheese butter cream",
-    "price": "£4.00",
+    "price": "£3.50",
     "priceFrom": false,
     "image": "",
-    "glutenFree": true,
-    "vegan": true,
+    "glutenFree": false,
+    "vegan": false,
     "soldOut": false
   },
   {
@@ -658,23 +658,74 @@ window.menuCatalogue = [
     "glutenFree": false,
     "vegan": false,
     "soldOut": false
+  },
+  {
+    "id": "item-1791312705369-wjlpic",
+    "title": "Giant Jaffa Cake",
+    "category": "Cakes",
+    "description": "I very large Jaffa cake (is it biscuit is it cake?)",
+    "price": "£3.50",
+    "priceFrom": false,
+    "image": "",
+    "glutenFree": false,
+    "vegan": false,
+    "soldOut": false
+  },
+  {
+    "id": "item-1791312767827-tn6pau",
+    "title": "Halloween Chocolate chip cookies",
+    "category": "Cookies",
+    "description": "A Halloween shaped chocolate chip cookie",
+    "price": "£2.50",
+    "priceFrom": false,
+    "image": "",
+    "glutenFree": true,
+    "vegan": false,
+    "soldOut": false
+  },
+  {
+    "id": "item-1791312833607-btkxwm",
+    "title": "Pecan Pie",
+    "category": "slices",
+    "description": "Pecan pie with vegan or gluten free pastry ",
+    "price": "",
+    "priceFrom": false,
+    "image": "",
+    "glutenFree": true,
+    "vegan": true,
+    "soldOut": false
+  },
+  {
+    "id": "item-1791312908199-b1sjtd",
+    "title": "Cinnamon Rolls",
+    "category": "slices",
+    "description": "A soft cinnamon roll with a sweet glaze ",
+    "price": "",
+    "priceFrom": false,
+    "image": "",
+    "glutenFree": false,
+    "vegan": false,
+    "soldOut": false
   }
 ];
 
 window.weeklyMenuSelection = [
+  "item-1791312908199-b1sjtd",
+  "item-1791312833607-btkxwm",
+  "item-1791312767827-tn6pau",
+  "item-1791312705369-wjlpic",
   "item-1790797435354-73th26",
-  "item-1790797345636-ei3bsy",
-  "item-1790797087850-992ott",
-  "item-1790796865124-9r006b",
-  "item-1790796702902-s0fsit",
-  "item-1788725154847-8ve93r",
-  "item-1788724877150-n8ntdy",
-  "item-1788037991791-h29gng",
-  "item-1789676408214-s5zo3d",
-  "item-1788290632398-l9y68i"
+  "item-1788724976103-yzidde",
+  "item-1788724781246-62k8ko",
+  "item-1788724546974-j4uysk",
+  "item-1787776006367-ci2qkk"
 ];
 
 window.menuItemOrder = [
+  "item-1791312908199-b1sjtd",
+  "item-1791312833607-btkxwm",
+  "item-1791312767827-tn6pau",
+  "item-1791312705369-wjlpic",
   "item-1790797435354-73th26",
   "item-1790797345636-ei3bsy",
   "item-1790797087850-992ott",
