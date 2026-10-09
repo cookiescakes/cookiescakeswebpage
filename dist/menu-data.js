@@ -642,7 +642,7 @@ window.menuCatalogue = [
     "description": "A spiced coffee cheesecake with a crumbly biscuit base",
     "price": "£4.00",
     "priceFrom": false,
-    "image": "",
+    "image": "images/1791573621852-item-1790797345636-ei3bsy-chai-late-cheesecake.jpg",
     "glutenFree": false,
     "vegan": false,
     "soldOut": false
