@@ -706,22 +706,48 @@ window.menuCatalogue = [
     "glutenFree": false,
     "vegan": false,
     "soldOut": false
+  },
+  {
+    "id": "item-1791799478446-vb4477",
+    "title": "Apple Pie",
+    "category": "slices",
+    "description": "A puff pastry Slice with a sweet apple pie filling. ",
+    "price": "£3.00",
+    "priceFrom": false,
+    "image": "",
+    "glutenFree": false,
+    "vegan": false,
+    "soldOut": false
+  },
+  {
+    "id": "item-1791799596947-vh71en",
+    "title": "Oreo Brownie",
+    "category": "Brownies",
+    "description": "A slice of Brownie filled and topped off by Oreos",
+    "price": "£3.50",
+    "priceFrom": false,
+    "image": "",
+    "glutenFree": false,
+    "vegan": false,
+    "soldOut": false
   }
 ];
 
 window.weeklyMenuSelection = [
-  "item-1791312908199-b1sjtd",
-  "item-1791312833607-btkxwm",
-  "item-1791312767827-tn6pau",
-  "item-1791312705369-wjlpic",
-  "item-1790797435354-73th26",
-  "item-1788724976103-yzidde",
-  "item-1788724781246-62k8ko",
-  "item-1788724546974-j4uysk",
-  "item-1787776006367-ci2qkk"
+  "item-1791799596947-vh71en",
+  "item-1791799478446-vb4477",
+  "item-1790019089360-s10c6j",
+  "item-1790018879571-8juans",
+  "item-1790018738178-56kukb",
+  "item-1788725034647-94rjma",
+  "item-1788724877150-n8ntdy",
+  "example-cake",
+  "item-1788290632398-l9y68i"
 ];
 
 window.menuItemOrder = [
+  "item-1791799596947-vh71en",
+  "item-1791799478446-vb4477",
   "item-1791312908199-b1sjtd",
   "item-1791312833607-btkxwm",
   "item-1791312767827-tn6pau",
