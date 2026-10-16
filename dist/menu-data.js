@@ -712,7 +712,7 @@ window.menuCatalogue = [
     "title": "Apple Pie",
     "category": "slices",
     "description": "A puff pastry Slice with a sweet apple pie filling. ",
-    "price": "£3.00",
+    "price": "£2.00",
     "priceFrom": false,
     "image": "",
     "glutenFree": false,
