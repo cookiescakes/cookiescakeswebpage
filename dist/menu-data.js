@@ -819,3 +819,7 @@ window.menuCategories = [
   "Muffins",
   "slices"
 ];
+
+window.quickMenuImage = "images/1792523795801-weekly-menu.jpg";
+
+window.useQuickMenuImage = true;
