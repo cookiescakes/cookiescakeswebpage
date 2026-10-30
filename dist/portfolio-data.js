@@ -135,7 +135,7 @@ window.portfolioItems = [
     "id": "portfolio-1788039410835-p23xyc",
     "title": "3 tiered fault line cake",
     "portfolioType": "cake",
-    "displayAsFeature": false,
+    "displayAsFeature": true,
     "displayAsHomepageFeature": false,
     "caption": "A 3 tiered fault line cake with edible lace. Top layer is a vanilla sponge cake with  salted caramel and ganache filling. The middle is a clear decorative layer. \nThe bottom layer is a lemon and blueberry cake with lemon curd and blueberry jam filling.",
     "instagram": "",
