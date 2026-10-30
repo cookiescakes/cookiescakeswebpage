@@ -810,6 +810,6 @@ window.menuCategories = [
   "slices"
 ];
 
-window.quickMenuImage = "images/1792523795801-weekly-menu.jpg";
+window.quickMenuImage = "images/1793365073033-weekly-menu.png";
 
 window.useQuickMenuImage = true;
